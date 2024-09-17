@@ -1,6 +1,11 @@
 const sideMenu = document.querySelector("#sideMenu");
 const navBar = document.querySelector("nav")
 const navLinks = document.querySelector("nav ul")
+const landingPage = document.querySelector('.landingpage')
+const aboutPage = document.querySelector('#about')
+const servicePage = document.querySelector('#services')
+const portfolioPage = document.querySelectorAll('#headingportfoliosection')
+const cards = document.querySelectorAll(".card")
 function getSideMenu(){
     sideMenu.style.transform = 'translateX(-16rem)'
 }
@@ -34,3 +39,62 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
         localStorage.theme = 'light'
      }
   }
+
+  gsap.from(navBar,{
+    y:50,
+    duration : 1,
+    opacity : 0
+})
+  gsap.from(landingPage,{
+    y:50,
+    duration : 1,
+    opacity : 0
+})
+gsap.from(aboutPage,{
+    y:90,
+    duration : 1,
+    opacity : 0,
+    scrollTrigger : {
+        trigger : aboutPage,
+        start : "top 60%",
+        end : "top 40%",
+        // markers : true,
+        scrub : true
+    }
+})
+gsap.from(servicePage,{
+    y:90,
+    duration : 1,
+    opacity : 0,
+    scrollTrigger : {
+        trigger : servicePage,
+        start : "top 60%",
+        end : "top 40%",
+        // markers : true,
+        scrub : true
+    }
+})
+gsap.from(portfolioPage,{
+    y:90,
+    duration : 1,
+    opacity : 0,
+    scrollTrigger : {
+        trigger : portfolioPage,
+        start : "top 60%",
+        end : "top 40%",
+        // markers : true,
+        scrub : true
+    }
+})
+gsap.from(cards,{
+    scale : 0.8,
+    duration : 0.2,
+    opacity : 0,
+    scrollTrigger : {
+        trigger : cards,
+        start : "top 80%",
+        end : "top 60%",
+        // markers : true,
+        scrub : true
+    }
+})

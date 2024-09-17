@@ -11,13 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./images/my pic2-photoaidcom-cropped.jpg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body class="overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
     <!-- -------------------------Navbar------------------------ -->
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
         <img src="./images/header-bg-color.png" class="w-full" alt="">
     </div>
-    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+    <nav class=" w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
         <img src="./images/simple logo 2.png" class="w-28 md:w-32 dark:hidden" alt="">
         <img src="./images/simple logo for dark mode 2.png" class="w-28 md:w-32 hidden dark:block" alt="">
         <ul class="hidden md:flex gap-6 lg:gap-8 items-center rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/50 dark:bg-transparent">
@@ -106,7 +108,7 @@
     </div>
     </nav>
     <!-- -------------------------Header------------------------ -->
-     <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+     <div class="landingpage w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
         <img src="./images/my pic2-photoaidcom-cropped.jpg" class="rounded-full w-32" alt="">
         <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3 font-Ovo ">Hi! I'm Pardeep Singh <img src="./images/hand-icon.png" class="w-6" alt=""></h3>
         <h1 class="text-3xl md:text-6xl lg:text-[66px] font-Ovo ">Front-end developer based in Punjab</h1>
@@ -173,7 +175,7 @@
         </div>
      </div>
      <!-- --------------------------Services-------------------------------- -->
-      <div id="services" class="w-full px-[12%] py-10 scroll-mt-14">
+      <div id="services" class="w-full px-[12%] py-10 scroll-mt-14" id="services">
         <h4 class="text-center mb-2 text-lg font-Ovo ">What i offer</h4>
         <h2 class="text-center text-5xl font-Ovo ">My services</h2>
         <p class="text-center max-w-2xl mx-auto  mt-5 mb-12 font-Ovo">I started my career as frontend engineer from about 1 year. As I also know very much about backend also.</p>
@@ -207,11 +209,11 @@
       </div>
       <!-- ------------------------------portfolio section----------------- -->
        <div id="mywork" class="w-full px-[12%] py-10 scroll-mt-14">
-        <h4 class="text-center mb-2 text-lg font-Ovo">My portfolio</h4>
-        <h2 class="text-center text-5xl font-Ovo">My latest work</h2>
-        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in full stack development</p>
+        <h4 class="text-center mb-2 text-lg font-Ovo" id="headingportfoliosection">My portfolio</h4>
+        <h2 class="text-center text-5xl font-Ovo" id="headingportfoliosection">My latest work</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo" id="headingportfoliosection">Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in full stack development</p>
         <div class="grid grid-cols-auto my-10 gap-5 dark:text-black">
-          <div class="aspect-square bg-[url('./images/online.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative group">
+          <div class="card aspect-square bg-[url('./images/online.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative group">
             <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
               <div>
                 <h2 class="font-semibold">Shopify</h2>
@@ -222,7 +224,7 @@
               </div>
             </div>
           </div>
-          <div class="aspect-square bg-[url('./images/newspaperreading.jpeg')] bg-no-repeat bg-cover bg-center rounded-lg relative group">
+          <div class="card aspect-square bg-[url('./images/newspaperreading.jpeg')] bg-no-repeat bg-cover bg-center rounded-lg relative group">
             <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
               <div>
                 <h2 class="font-semibold">ABP News</h2>
@@ -233,7 +235,7 @@
               </div>
             </div>
           </div>
-          <div class="aspect-square bg-[url('./images/work-3.png')] bg-no-repeat bg-cover bg-center rounded-lg relative group">
+          <div class="card aspect-square bg-[url('./images/work-3.png')] bg-no-repeat bg-cover bg-center rounded-lg relative group">
             <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
               <div>
                 <h2 class="font-semibold">ABP News</h2>
@@ -244,7 +246,7 @@
               </div>
             </div>
           </div>
-          <div class="aspect-square bg-[url('./images/work-4.png')] bg-no-repeat bg-cover bg-center rounded-lg relative group">
+          <div class="card aspect-square bg-[url('./images/work-4.png')] bg-no-repeat bg-cover bg-center rounded-lg relative group">
             <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
               <div>
                 <h2 class="font-semibold">UI/UX design</h2>
@@ -256,7 +258,7 @@
             </div>
           </div>
         </div>
-        <a href="#" class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-violet-300 duration-500 dark:border-white dark:text-white">Show more 
+        <a href="#" class=" card w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-violet-300 duration-500 dark:border-white dark:text-white" >Show more 
           <img src="./images/right-arrow-bold.png" alt="" class="w-4 dark:hidden">
           <img src="./images/right-arrow-bold-dark.png" alt="" class="w-4 hidden dark:block">
         </a>
