@@ -40,13 +40,9 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
      }
   }
 
-  gsap.from(navBar,{
-    y:50,
-    duration : 1,
-    opacity : 0
-})
+
   gsap.from(landingPage,{
-    y:50,
+    y:-50,
     duration : 1,
     opacity : 0
 })
