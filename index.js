@@ -52,8 +52,8 @@ gsap.from(aboutPage,{
     opacity : 0,
     scrollTrigger : {
         trigger : aboutPage,
-        start : "top 60%",
-        end : "top 40%",
+        start : "top 70%",
+        end : "top 50%",
         // markers : true,
         scrub : true
     }
@@ -64,8 +64,8 @@ gsap.from(servicePage,{
     opacity : 0,
     scrollTrigger : {
         trigger : servicePage,
-        start : "top 60%",
-        end : "top 40%",
+        start : "top 70%",
+        end : "top 50%",
         // markers : true,
         scrub : true
     }
@@ -76,8 +76,8 @@ gsap.from(portfolioPage,{
     opacity : 0,
     scrollTrigger : {
         trigger : portfolioPage,
-        start : "top 60%",
-        end : "top 40%",
+        start : "top 70%",
+        end : "top 50%",
         // markers : true,
         scrub : true
     }
