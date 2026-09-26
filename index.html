@@ -1,357 +1,881 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio - PS</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./tailwind.config.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./images/my pic2-photoaidcom-cropped.jpg">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pardeep Singh | Full Stack Developer (React, Next.js, Node.js) | Mohali, India</title>
+  <meta name="description"
+    content="Full Stack Developer with 1.5+ years of experience shipping 20+ web products across finance, e-commerce, real estate, and events. React, Next.js, Node.js, NestJS, PostgreSQL, MongoDB, Redis.">
+  <link rel="canonical" href="https://pardeepsingh.netlify.app/">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pardeepsingh.netlify.app/">
+  <meta property="og:title" content="Pardeep Singh | Full Stack Developer (React, Next.js, Node.js) | Mohali, India">
+  <meta property="og:description"
+    content="Full Stack Developer with 1.5+ years of experience shipping 20+ web products across finance, e-commerce, real estate, and events. React, Next.js, Node.js, NestJS, PostgreSQL, MongoDB, Redis.">
+  <meta property="og:image" content="https://pardeepsingh.netlify.app/images/og-image.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://pardeepsingh.netlify.app/">
+  <meta name="twitter:title" content="Pardeep Singh | Full Stack Developer (React, Next.js, Node.js) | Mohali, India">
+  <meta name="twitter:description"
+    content="Full Stack Developer with 1.5+ years of experience shipping 20+ web products across finance, e-commerce, real estate, and events. React, Next.js, Node.js, NestJS, PostgreSQL, MongoDB, Redis.">
+  <meta name="twitter:image" content="https://pardeepsingh.netlify.app/images/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+
+  <!-- JSON-LD Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pardeep Singh",
+    "jobTitle": "Full Stack Developer",
+    "url": "https://pardeepsingh.netlify.app/",
+    "email": "pardeep.codes04@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mohali",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/pardeep-codes",
+      "https://github.com/pardeepsingh77"
+    ]
+  }
+  </script>
+
+  <!-- Tailwind and Styles -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./tailwind.config.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body class="overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
-    <!-- -------------------------Navbar------------------------ -->
-    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
-        <img src="./images/header-bg-color.png" class="w-full" alt="">
-    </div>
-    <nav class=" w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
-        <img src="./images/simple logo 2.png" class="w-28 md:w-32 dark:hidden" alt="">
-        <img src="./images/simple logo for dark mode 2.png" class="w-28 md:w-32 hidden dark:block" alt="">
-        <ul class="hidden md:flex gap-6 lg:gap-8 items-center rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/50 dark:bg-transparent">
-            <li class="group relative inline-block">
-                <a href="#top" class="relative inline-block group" onclick="closeSideMenu()">
-                  Home
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out "></span>
-                </a>
-              </li>
-              
-              <li class="group relative inline-block">
-                <a href="#about" class="relative inline-block" onclick="closeSideMenu()">
-                  About Me
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-                </a>
-              </li>
-              <li class="group relative inline-block">
-                <a href="#services" class="relative inline-block" onclick="closeSideMenu()">
-                  Services
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-                </a>
-              </li>
-              <li class="group relative inline-block">
-                <a href="#mywork" class="relative inline-block" onclick="closeSideMenu()">
-                  My Work
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-                </a>
-              </li>
-              <li class="group relative inline-block">
-                <a href="#contact" class="relative inline-block" onclick="closeSideMenu()">
-                  Contact Me
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-                </a>
-              </li>
-        </ul>
-        <div class="flex items-center gap-4">
-        <button onclick="toggleTheme()">
-          <img src="./images/moon_icon.png" class="w-6 dark:hidden" alt="">
-          <img src="./images/sun_icon.png" class="w-6 hidden dark:block" alt="">
-        </button>
-        <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 bg-gradient-to-t from-[gray] to-[black] text-white transition duration-300 font-Ovo dark:border-white/50 dark:bg-none">Contact <i class="fa-solid fa-arrow-up-right-from-square w-6"></i></a>
-        <button class="block md:hidden ml-3" onclick="getSideMenu()">
-          <img src="./images/menu-black.png" class="w-6 dark:hidden" alt="">
-          <img src="./images/menu-white.png" class="w-6 hidden dark:block" alt="">
-        </button>
 
-        <!-- ----------------------------sideMenu---------------------------- -->
-         <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-[gray]  transition duration-500 dark:bg-[#2a004a]">
-            <div class="absolute right-6 top-6">
-                <img onclick="closeSideMenu()" src="./images/close-black.png" class="w-5 cursor-pointer dark:hidden" alt="">
-                <img onclick="closeSideMenu()" src="./images/close-white.png" class="w-5 cursor-pointer hidden dark:block" alt="">
-            </div>
-            <li class="group relative inline-block">
-                <a href="#top" class="relative inline-block group" onclick="closeSideMenu()">
-                  Home
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-                </a>
-              </li>
-              
-              <li class="group relative inline-block">
-                <a href="#about" class="relative inline-block" onclick="closeSideMenu()">
-                  About Me
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-                </a>
-              </li>
-              <li class="group relative inline-block">
-                <a href="#services" class="relative inline-block" onclick="closeSideMenu()">
-                  Services
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-                </a>
-              </li>
-              <li class="group relative inline-block">
-                <a href="#mywork" class="relative inline-block" onclick="closeSideMenu()">
-                  My Work
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-                </a>
-              </li>
-              <li class="group relative inline-block">
-                <a href="#contact" class="relative inline-block" onclick="closeSideMenu()">
-                  Contact Me
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-                </a>
-              </li>
-              
-         </ul>
+<body id="top" class="overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
+  <!-- -------------------------Navbar------------------------ -->
+  <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
+    <img src="./images/header-bg-color.png" class="w-full" alt="" aria-hidden="true">
+  </div>
+  <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+    <a href="#top" aria-label="Pardeep Singh Portfolio">
+      <img src="./images/simple logo 2.png" class="w-28 md:w-32 dark:hidden" alt="Pardeep Singh Logo">
+      <img src="./images/simple logo for dark mode 2.png" class="w-28 md:w-32 hidden dark:block"
+        alt="Pardeep Singh Logo">
+    </a>
+    <ul
+      class="hidden md:flex gap-6 lg:gap-8 items-center rounded-full px-10 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/50 dark:bg-transparent">
+      <li class="group relative inline-block">
+        <a href="#top" class="relative inline-block group" onclick="closeSideMenu()">
+          Home
+          <span
+            class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+        </a>
+      </li>
+      <li class="group relative inline-block">
+        <a href="#about" class="relative inline-block" onclick="closeSideMenu()">
+          About
+          <span
+            class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+        </a>
+      </li>
+      <li class="group relative inline-block">
+        <a href="#experience" class="relative inline-block" onclick="closeSideMenu()">
+          Experience
+          <span
+            class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+        </a>
+      </li>
+      <li class="group relative inline-block">
+        <a href="#services" class="relative inline-block" onclick="closeSideMenu()">
+          Services
+          <span
+            class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+        </a>
+      </li>
+      <li class="group relative inline-block">
+        <a href="#mywork" class="relative inline-block" onclick="closeSideMenu()">
+          Work
+          <span
+            class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+        </a>
+      </li>
+      <li class="group relative inline-block">
+        <a href="#contact" class="relative inline-block" onclick="closeSideMenu()">
+          Contact
+          <span
+            class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+        </a>
+      </li>
+    </ul>
+    <div class="flex items-center gap-4">
+      <button onclick="toggleTheme()" aria-label="Toggle dark mode" class="p-1">
+        <img src="./images/moon_icon.png" class="w-6 dark:hidden" alt="Switch to dark mode">
+        <img src="./images/sun_icon.png" class="w-6 hidden dark:block" alt="Switch to light mode">
+      </button>
+      <a href="#contact"
+        class="hidden lg:flex items-center gap-3 px-8 py-2.5 border border-gray-500 rounded-full ml-2 bg-gradient-to-t from-[gray] to-[black] text-white transition duration-300 font-Ovo dark:border-white/50 dark:bg-none hover:opacity-90">
+        Contact
+        <i class="fa-solid fa-arrow-up-right-from-square w-4" aria-hidden="true"></i>
+      </a>
+      <button class="block md:hidden ml-2 p-1" onclick="getSideMenu()" aria-label="Open mobile menu">
+        <img src="./images/menu-black.png" class="w-6 dark:hidden" alt="Open menu">
+        <img src="./images/menu-white.png" class="w-6 hidden dark:block" alt="Open menu">
+      </button>
+
+      <!-- ----------------------------sideMenu---------------------------- -->
+      <ul id="sideMenu"
+        class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-[gray] transition duration-500 dark:bg-[#2a004a]">
+        <div class="absolute right-6 top-6">
+          <button onclick="closeSideMenu()" aria-label="Close mobile menu" class="p-1">
+            <img src="./images/close-black.png" class="w-5 cursor-pointer dark:hidden" alt="Close menu">
+            <img src="./images/close-white.png" class="w-5 cursor-pointer hidden dark:block" alt="Close menu">
+          </button>
+        </div>
+        <li class="group relative inline-block">
+          <a href="#top" class="relative inline-block group" onclick="closeSideMenu()">
+            Home
+            <span
+              class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+          </a>
+        </li>
+        <li class="group relative inline-block">
+          <a href="#about" class="relative inline-block" onclick="closeSideMenu()">
+            About
+            <span
+              class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+          </a>
+        </li>
+        <li class="group relative inline-block">
+          <a href="#experience" class="relative inline-block" onclick="closeSideMenu()">
+            Experience
+            <span
+              class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+          </a>
+        </li>
+        <li class="group relative inline-block">
+          <a href="#services" class="relative inline-block" onclick="closeSideMenu()">
+            Services
+            <span
+              class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+          </a>
+        </li>
+        <li class="group relative inline-block">
+          <a href="#mywork" class="relative inline-block" onclick="closeSideMenu()">
+            Work
+            <span
+              class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+          </a>
+        </li>
+        <li class="group relative inline-block">
+          <a href="#contact" class="relative inline-block" onclick="closeSideMenu()">
+            Contact
+            <span
+              class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+          </a>
+        </li>
+      </ul>
     </div>
-    </nav>
-    <!-- -------------------------Header------------------------ -->
-     <div class="landingpage  w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
-        <img src="./images/my pic2-photoaidcom-cropped.jpg" class="rounded-full w-32" alt="">
-        <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3 font-Ovo ">Hi! I'm Pardeep Singh <img src="./images/hand-icon.png" class="w-6" alt=""></h3>
-        <h1 class="text-3xl md:text-6xl lg:text-[66px] font-Ovo ">Full Stack Developer</h1>
-        <p class="max-w-2xl mx-auto font-Ovo ">I build web applications that are fast, functional, and built to last. I work primarily with the MERN stack to bring ideas to life, whether it's building a product from scratch or improving an existing one. I care about clean code, thoughtful design, and building things that make a difference.</p>
-        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4 ">
-            <a href="#contact" class="px-10 py-4 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent">Let’s Connect<img src="./images/right-arrow-white.png" class="w-4" alt=""></a>
-            <a href="https://drive.google.com/uc?export=download&id=1i0WRjl5gytkaAPuTdL3VkbZADCcCSI9e" class="px-10 py-4 rounded-full  flex items-center gap-2  bg-gradient-to-t
-            text-white bg-gradient-to-t from-[gray] to-[black] transition duration-200 dark:bg-none dark:text-black dark:bg-white">Download CV/Resume<i class="fa-solid fa-download"></i></a>
+  </nav>
+
+  <!-- -------------------------Hero / Header------------------------ -->
+  <div
+    class="landingpage w-11/12 max-w-3xl text-center mx-auto min-h-screen pt-28 pb-16 flex flex-col items-center justify-center gap-4">
+    <img src="./images/WhatsApp Image 2026-09-24 at 10.43.33 PM.jpeg" class="rounded-full w-32 h-32 object-cover shadow-md"
+      alt="Pardeep Singh">
+
+    <!-- Availability badge -->
+    <div
+      class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-emerald-500/40 bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 text-xs sm:text-sm font-medium">
+      <span class="relative flex h-2 w-2">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+      </span>
+      Open to opportunities
+    </div>
+
+    <!-- Eyebrow -->
+    <h3 class="flex items-center gap-2 text-xl md:text-2xl font-Ovo">
+      Hi, I'm Pardeep Singh
+      <img src="./images/hand-icon.png" class="w-6 inline-block" alt="Waving hand">
+    </h3>
+
+    <!-- Headline (h1) -->
+    <h1 class="text-3xl md:text-6xl lg:text-[66px] font-Ovo leading-tight">Full Stack Developer</h1>
+
+    <!-- Paragraph -->
+    <p class="max-w-2xl mx-auto font-Ovo text-gray-700 dark:text-white/90 leading-relaxed">
+      I build and ship production web apps, from React and Next.js interfaces to Node.js APIs, payments, background
+      jobs, and Linux deployments. 20+ products delivered across finance, e-commerce, real estate, and events.
+    </p>
+
+    <!-- Stat chips -->
+    <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 my-2 text-xs sm:text-sm text-gray-700 dark:text-gray-200">
+      <span class="px-3.5 py-1.5 rounded-full border border-gray-300 dark:border-white/20 bg-white/70 dark:bg-white/5 backdrop-blur-sm">1.5+ years experience</span>
+      <span class="px-3.5 py-1.5 rounded-full border border-gray-300 dark:border-white/20 bg-white/70 dark:bg-white/5 backdrop-blur-sm">20+ products shipped</span>
+      <span class="px-3.5 py-1.5 rounded-full border border-gray-300 dark:border-white/20 bg-white/70 dark:bg-white/5 backdrop-blur-sm">Based in Mohali, India</span>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex flex-col sm:flex-row items-center gap-4 mt-2">
+      <a href="#mywork"
+        class="px-8 py-3.5 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 hover:opacity-90 transition duration-300 font-Ovo dark:border-transparent shadow-sm">
+        View my work
+        <img src="./images/right-arrow-white.png" class="w-4" alt="" aria-hidden="true">
+      </a>
+      <a href="./resume/Pardeep_Singh_Resume_2026.pdf" download="Pardeep_Singh_Resume_2026.pdf"
+        class="px-8 py-3.5 rounded-full flex items-center gap-2 text-white bg-gradient-to-t from-[gray] to-[black] transition duration-300 font-Ovo dark:bg-none dark:text-black dark:bg-white hover:scale-105">
+        Download résumé
+        <i class="fa-solid fa-download text-sm" aria-hidden="true"></i>
+      </a>
+      <a href="#contact"
+        class="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white underline-offset-4 hover:underline transition font-Ovo text-sm sm:text-base">
+        Let's connect &rarr;
+      </a>
+    </div>
+  </div>
+
+  <!-- -----------------------------About me------------------------ -->
+  <div class="w-full px-[12%] py-10 scroll-mt-14" id="about">
+    <h4 class="text-center mb-2 text-lg font-Ovo">Introduction</h4>
+    <h2 class="text-center text-5xl font-Ovo">About me</h2>
+
+    <div class="flex w-full flex-col lg:flex-row items-start gap-12 lg:gap-20 my-10">
+      <div class="max-w-max mx-auto relative flex-shrink-0">
+        <img src="./images/WhatsApp Image 2026-09-24 at 10.43.33 PM.jpeg" class="w-64 sm:w-80 rounded-3xl max-w-none object-cover"
+          alt="Pardeep Singh profile photo" loading="lazy">
+        <div
+          class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px__rgba(149,0,162,0.15)] flex items-center justify-center">
+          <img src="./images/ChatGPT Image Aug 25, 2025, 09_52_25 PM.png" alt="" class="w-full animate-spin_slow"
+            aria-hidden="true" loading="lazy">
+          <img src="./images/boy-laptop.jpeg" class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full"
+            alt="Developer icon" loading="lazy">
         </div>
-     </div>
-     <!-- -----------------------------About me------------------------ -->
-     <div class="w-full px-[12%] py-10 scroll-mt-14" id="about">
-        <h4 class="text-center mb-2 text-lg font-Ovo ">Introduction</h4>
-        <h2 class="text-center text-5xl font-Ovo">About me</h2>
-        <div class="flex w-full flex-col lg:flex-row items-start gap-20 my-10">
-            <div class="max-w-max mx-auto relative">
-                <img src="./images/my pic2.jpg" class="w-64 sm:w-80 rounded-3xl max-w-none" alt="">
-                <div class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px__rgba(149,0,162,0.15)] flex items-center justify-center">
-                  <img src="./images/ChatGPT Image Aug 25, 2025, 09_52_25 PM.png" alt="" class="w-full animate-spin_slow">
-                  <img src="./images/boy-laptop.jpeg" class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" alt="">
-                </div>
-            </div>
-            <div class="flex-1">
-                <p class="mb-1 max-w-2xl font-Ovo ">I’m a developer who thrives on building accessible, pixel-perfect user interfaces that blend thoughtful design with solid engineering. I love working where design meets development, crafting experiences that not only look stunning but are also optimized for performance and ease of use.</p>
-                <p class="mb-1 max-w-2xl font-Ovo">My journey has taken me through a variety of environments—from advertising agencies and large enterprises to startups and innovative tech collectives. A key milestone in my career was building feature-rich web applications <a class="text-blue-400" href="http://advancecomputercentre.in">advancecomputercentre.in</a> that combine robust backend services with smooth, accessible user experiences.</p>
-                <p class="mb-10 max-w-2xl font-Ovo">Beyond work, I’m passionate about maintaining my physical fitness, indulging in playful escapes, honing my cooking skills, and taking scenic drives to recharge and find inspiration.</p>
-                <ul class="grid grid-cols-1 sm:grid-cols-auto gap-6 max-w-2xl">
-                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-lightHover">
-                        <img src="./images/code-icon.png" class="w-7 mt-3 dark:hidden" alt="">
-                        <img src="./images/code-icon-dark.png" class="w-7 mt-3 hidden dark:block" alt="">
-                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Languages & Technologies</h3>
-                        <p class="text-gray-600 text-sm dark:text-white/80">JavaScript (ES6+), HTML5, CSS3, MongoDB, RESTful APIs</p>
-                    </li>
-                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-lightHover">
-                        <img src="./images/edu-icon.png" class="w-7 mt-3 dark:hidden" alt="">
-                        <img src="./images/edu-icon-dark.png" class="w-7 mt-3 hidden dark:block" alt="">
-                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Education</h3>
-                        <p class="text-gray-600 text-sm dark:text-white/80">Bachelor of Computer Applications (BCA)</p>
-                        <p class="text-gray-600 text-sm dark:text-white/80">Chandigarh Group of Colleges (NAAC A+), Jhanjeri, Mohali, India | 2021 – 2024</p>
-                    </li>
-                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-lightHover">
-                        <img src="./images/project-icon.png" class="w-7 mt-3 dark:hidden" alt="">
-                        <img src="./images/project-icon-dark.png" class="w-7 mt-3 hidden dark:block" alt="">
-                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Frameworks & Libraries</h3>
-                        <p class="text-gray-600 text-sm dark:text-white/80">React.js, Next.js, Angular (1.x), Node.js, Express.js, Tailwind CSS, Bootstrap</p>
-                    </li>
-                </ul>
-                <h4 class="my-6 text-gray-700 font-Ovo dark:text-white/80">Tools I work on</h4>
-                <ul class="flex items-center gap-3  sm:gap-5">
-                  <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                    <img src="./images/vscode.png" class="w-5 sm:w-7" alt="">
-                  </li>
-                  <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                    <img src="./images/firebase.png" class="w-5 sm:w-7" alt="">
-                  </li>
-                  <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                    <img src="./images/mongodb.png" class="w-5 sm:w-7" alt="">
-                  </li>
-                  <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                    <img src="./images/figma.png" class="w-5 sm:w-7" alt="">
-                  </li>
-                  <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                    <img src="./images/git.png" class="w-5 sm:w-7" alt="">
-                  </li>
-                </ul>
-            </div>
+      </div>
+
+      <div class="flex-1 space-y-4">
+        <p class="font-Ovo text-gray-700 dark:text-white/90 leading-relaxed">
+          I'm a full stack developer who enjoys taking a product from idea to production. I work across the whole stack:
+          building the interface in React and Next.js, designing the APIs and data layer in Node.js, and deploying and
+          maintaining it on Linux servers.
+        </p>
+        <p class="font-Ovo text-gray-700 dark:text-white/90 leading-relaxed">
+          Most of my work involves the parts that make a product real: payments, identity verification, SMS and email,
+          Shopify integrations, and background jobs and caching that keep things fast. I've built products for finance,
+          e-commerce, real estate, and events, and I'm comfortable both starting from scratch and improving an existing
+          codebase.
+        </p>
+        <p class="font-Ovo text-gray-700 dark:text-white/90 leading-relaxed">
+          I started with a BCA degree and a MERN stack internship, then worked as a software engineer at Acoustte before
+          joining Esferasoft Solutions, where I currently build and maintain full stack products in a team using Git-based
+          workflows.
+        </p>
+        <p class="font-Ovo text-gray-700 dark:text-white/90 leading-relaxed">
+          Outside of work I stay active with fitness, cook, and go on long drives to recharge.
+        </p>
+
+        <!-- Stats row (3 items) -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+          <div
+            class="border-[0.5px] border-gray-400 dark:border-white/40 rounded-xl p-4 text-center hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white dark:hover:bg-white/5">
+            <h3 class="text-3xl font-bold font-Ovo text-gray-800 dark:text-white">20+</h3>
+            <p class="text-xs sm:text-sm text-gray-600 dark:text-white/80 mt-1">Web products shipped</p>
+          </div>
+          <div
+            class="border-[0.5px] border-gray-400 dark:border-white/40 rounded-xl p-4 text-center hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white dark:hover:bg-white/5">
+            <h3 class="text-3xl font-bold font-Ovo text-gray-800 dark:text-white">1.5+</h3>
+            <p class="text-xs sm:text-sm text-gray-600 dark:text-white/80 mt-1">Years of experience</p>
+          </div>
+          <div
+            class="border-[0.5px] border-gray-400 dark:border-white/40 rounded-xl p-4 text-center hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white dark:hover:bg-white/5">
+            <h3 class="text-3xl font-bold font-Ovo text-gray-800 dark:text-white">4</h3>
+            <p class="text-xs sm:text-sm text-gray-600 dark:text-white/80 mt-1">Industries: finance, e-commerce, real estate, events</p>
+          </div>
         </div>
-     </div>
-     <!-- --------------------------Services-------------------------------- -->
-      <div id="services" class="w-full px-[12%] py-10 scroll-mt-14" id="services">
-        <h4 class="text-center mb-2 text-lg font-Ovo ">What I Offer</h4>
-        <h2 class="text-center text-5xl font-Ovo ">My Services</h2>
-        <p class="text-center max-w-2xl mx-auto  mt-5 mb-6 font-Ovo">I specialize in building digital products that don’t just work — they scale, perform, and deliver real value. I take ideas from zero to production, handling everything from crafting responsive, user-first interfaces to engineering secure, efficient backend systems.</p>
-        <p class="text-center max-w-2xl mx-auto  mt-5 mb-12 font-Ovo">My focus is always on clean architecture, smooth performance, and long-term maintainability, so what I build today still works flawlessly tomorrow.</p>
-        <div class="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 my-10">
-          <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-darkHover hover:-translate-y-1 transition duration-500 dark:hover:shadow-white">
-            <!-- <i class="fa-solid fa-globe text-2xl border border-gray-500 px-3 rounded-lg text-white bg-gray-700 py-2"></i> -->
-            <h3 class="text-lg my-4 text-gray-700 dark:text-white">🔧 Full-Stack Web Development</h3>
-            <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Designing and developing complete web applications using modern frontend and backend technologies (React.js, Node.js, Express.js, MongoDB, etc.) with clean, modular, and maintainable code.</p>
-            <!-- <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="./images/right-arrow.png" alt="" class="w-4"></a> -->
-          </div>
-          <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-darkHover hover:-translate-y-1 transition duration-500 dark:hover:shadow-white">
-            <!-- <i class="fa-solid fa-globe text-2xl border border-gray-500 px-3 rounded-lg text-white bg-gray-700 py-2"></i> -->
-            <h3 class="text-lg my-4 text-gray-700 dark:text-white">🗃️ Database Design & Management</h3>
-            <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Designing scalable database schemas, managing data with MongoDB, and ensuring data integrity, security, and performance.</p>
-            <!-- <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="./images/right-arrow.png" alt="" class="w-4"></a> -->
-          </div>
-           <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-darkHover hover:-translate-y-1 transition duration-500 dark:hover:shadow-white">
-            <!-- <i class="fa-solid fa-globe text-2xl border border-gray-500 px-3 rounded-lg text-white bg-gray-700 py-2"></i> -->
-            <h3 class="text-lg my-4 text-gray-700 dark:text-white">🎨 Frontend Development</h3>
-            <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Building responsive, accessible, and pixel-perfect user interfaces using React, Next.js, Tailwind CSS, and more — optimized for performance, usability, and SEO.</p>
-            <!-- <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="./images/right-arrow.png" alt="" class="w-4"></a> -->
-          </div>
-           <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-darkHover hover:-translate-y-1 transition duration-500 dark:hover:shadow-white">
-            <!-- <i class="fa-solid fa-globe text-2xl border border-gray-500 px-3 rounded-lg text-white bg-gray-700 py-2"></i> -->
-            <h3 class="text-lg my-4 text-gray-700 dark:text-white">☁️ Deployment & Hosting</h3>
-            <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Deploying web applications using cloud platforms like Vercel, Netlify, and Azure — setting up CI/CD pipelines and environment configurations for smooth production releases.</p>
-            <!-- <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="./images/right-arrow.png" alt="" class="w-4"></a> -->
-          </div>
-          <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-darkHover hover:-translate-y-1 transition duration-500 dark:hover:shadow-white">
-            <!-- <i class="fa-solid fa-globe text-2xl border border-gray-500 px-3 rounded-lg text-white bg-gray-700 py-2"></i> -->
-            <h3 class="text-lg my-4 text-gray-700 dark:text-white">🔐 Authentication & Security</h3>
-            <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Implementing secure user authentication, role-based access control, and best practices to protect applications from vulnerabilities.</p>
-            <!-- <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="./images/right-arrow.png" alt="" class="w-4"></a> -->
-          </div>
-          <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-darkHover hover:-translate-y-1 transition duration-500 dark:hover:shadow-white">
-            <!-- <i class="fa-solid fa-mobile text-2xl border border-gray-500 px-3 rounded-lg text-white bg-gray-700 py-2"></i> -->
-            <h3 class="text-lg my-4 text-gray-700 dark:text-white">📱 Responsive & Cross-Platform Design</h3>
-            <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Ensuring the application delivers a seamless experience across devices and screen sizes, with attention to accessibility and cross-browser compatibility.</p>
-            <!-- <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="./images/right-arrow.png" alt="" class="w-4"></a> -->
-          </div>
-          <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-darkHover hover:-translate-y-1 transition duration-500 dark:hover:shadow-white">
-            <!-- <i class="fa-solid fa-laptop-code text-2xl border border-gray-500 px-3 rounded-lg text-white bg-gray-700 py-2"></i> -->
-            <h3 class="text-lg my-4 text-gray-700 dark:text-white">🔍 Code Optimization & Performance Tuning</h3>
-            <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Improving load times, reducing bundle sizes, and optimizing frontend/backend performance for a fast and smooth user experience.</p>
-            <!-- <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="./images/right-arrow.png" alt="" class="w-4"></a> -->
-          </div>
-          <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-darkHover hover:-translate-y-1 transition duration-500 dark:hover:shadow-white">
-            <!-- <i class="fa-solid fa-code text-2xl border border-gray-500 px-3 rounded-lg text-white bg-gray-700 py-2"></i> -->
-            <h3 class="text-lg my-4 text-gray-700 dark:text-white">⚙️ Backend Development & API Integration</h3>
-            <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Creating robust backend systems with Node.js and Express, building secure RESTful APIs, handling authentication (JWT, OAuth), and integrating third-party services.</p>
-            <!-- <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="./images/right-arrow.png" alt="" class="w-4"></a> -->
+
+        <!-- Education block (keep the existing icon) -->
+        <div
+          class="border-[0.5px] border-gray-400 dark:border-white/40 rounded-xl p-5 mt-6 hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white dark:hover:bg-white/5">
+          <div class="flex items-start gap-4">
+            <div>
+              <img src="./images/edu-icon.png" class="w-7 mt-1 dark:hidden" alt="Education icon" loading="lazy">
+              <img src="./images/edu-icon-dark.png" class="w-7 mt-1 hidden dark:block" alt="Education icon" loading="lazy">
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-700 dark:text-white font-Ovo text-base sm:text-lg">Bachelor of Computer Applications (BCA)</h3>
+              <p class="text-gray-600 text-sm dark:text-white/80 mt-0.5">Chandigarh Group of Colleges, Mohali, India | 2021 – 2024</p>
+            </div>
           </div>
         </div>
       </div>
-      <!-- ------------------------------portfolio section----------------- -->
-       <div id="mywork" class="w-full px-[12%] py-10 scroll-mt-14">
-        <h4 class="text-center mb-2 text-lg font-Ovo" id="headingportfoliosection">What I’ve Built</h4>
-        <h2 class="text-center text-5xl font-Ovo" id="headingportfoliosection">My Latest Work</h2>
-        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo" id="headingportfoliosection">Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in full stack development</p>
-        <div class="grid grid-cols-auto my-10 gap-5 dark:text-black">
-          <div class="card aspect-square bg-[url('./images/online.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative group">
-            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-              <div>
-                <h2 class="font-semibold">Shopify</h2>
-                <p class="text-sm text-gray-700">E - Comm Web</p>
-              </div>
-              <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                <a href="https://shopify-allyouneed.onrender.com/" target="_blank"><img src="./images/send-icon.png" class="w-5 cursor-pointer" alt=""></a>
-              </div>
-               <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-               <a href="https://github.com/pardeepsingh77/LMS-Site-Manider-Sir" class="flex justify-center items-center" target="_blank"><box-icon type='logo' name='github'></box-icon></a>
-              </div>
-            </div>
-          </div>
-          <div class="card aspect-square bg-[url('./images/image1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative group">
-            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-              <div>
-                <h2 class="font-semibold">LMS Site</h2>
-                <p class="text-sm text-gray-700">E - Learning Site</p>
-              </div>
-              <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-               <a href="https://www.advancecomputercentre.in" target="_blank"> <img src="./images/send-icon.png" class="w-5 cursor-pointer" alt=""></a>
-              </div>
-              <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-               <a href="https://github.com/pardeepsingh77/LMS-Site-Manider-Sir" class="flex justify-center items-center" target="_blank"><box-icon type='logo' name='github'></box-icon></a>
-              </div>
-            </div>
-          </div>
-          <div class="card aspect-square bg-[url('./images/image2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative group">
-            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-              <div>
-                <h2 class="font-semibold">Styx Sports</h2>
-                <p class="text-sm text-gray-700">Cricket Streaming Site</p>
-              </div>
-              <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                <a href="https://styxsports.com" target="_blank"><img src="./images/send-icon.png" class="w-5 cursor-pointer" alt=""></a>
-              </div>
-             
-            </div>
-          </div>
-          <div class="card aspect-square bg-[url('./images/image.png')] bg-no-repeat bg-cover bg-right rounded-lg relative group">
-            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-              <div>
-                <h2 class="font-semibold">Reeipo</h2>
-                <p class="text-sm text-gray-700">Real Estate Site</p>
-              </div>
-              <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-              <a href="https://reeipo-new.vipankumar.in/" target="_blank"><img src="./images/send-icon.png" class="w-5 cursor-pointer" alt=""> </a>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <a href="projects.html" class=" card w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-violet-300 duration-500 dark:border-white dark:text-white" >See More 
-          <img src="./images/right-arrow-bold.png" alt="" class="w-4 dark:hidden">
-          <img src="./images/right-arrow-bold-dark.png" alt="" class="w-4 hidden dark:block">
-        </a>
-       </div>
+    </div>
 
-       <!-- --------------------------contact-------------------- -->
-        <div id="contact" class="w-full px-[12%] py-10 scroll-mt-14 bg-[url('./images/footer-bg-color.png')] dark:bg-none bg-no-repeat bg-[length:90%_auto] bg-center">
-          <h4 class="text-center mb-2 text-lg font-Ovo">Have an Idea? Let’s Talk</h4>
-          <h2 class="text-center text-5xl font-Ovo">Get in Touch</h2>
-          <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">Let’s turn your ideas into something real. If you’ve got a vision, I’ve got the code. Reach out — I’d love to hear from you.</p>
-          <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
-            <input type="hidden" name="access_key" value="a80c56e4-93d0-433c-be33-1487b0e5295d">
-            <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
-              <input type="text" placeholder="Enter your name" name="name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-slate-500" required>
-              <input type="email" placeholder="Enter your email" name="email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-slate-500" required>
-            </div>
-            <textarea rows="6" placeholder="Enter your message" name="message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-slate-500" id="" required></textarea>
-            <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-white dark:text-black dark:hover:bg-lime-400">Connect 
-              <img src="./images/right-arrow-white.png" class="w-4 dark:hidden" alt="">
-              <img src="./images/right-arrow-bold.png" class="w-4 hidden dark:block" alt="">
-            </button>
-          </form>
+    <!-- --------------------------Skills & Tools------------------------ -->
+    <div class="mt-14 pt-10 border-t border-gray-300 dark:border-gray-700">
+      <h4 class="text-center mb-2 text-lg font-Ovo">What I work with</h4>
+      <h2 class="text-center text-4xl font-Ovo mb-8">Skills & Tools</h2>
+
+      <div class="max-w-4xl mx-auto space-y-4">
+        <!-- Languages -->
+        <div
+          class="flex flex-col sm:flex-row sm:items-center gap-3 p-4 rounded-xl border border-gray-300 dark:border-white/20 bg-white/60 dark:bg-white/5">
+          <div class="w-full sm:w-48 font-semibold text-gray-800 dark:text-white font-Ovo text-sm sm:text-base flex-shrink-0">
+            Languages
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-javascript-plain colored text-base" aria-hidden="true"></i> JavaScript
+            </span>
+          </div>
         </div>
-        <!-- -------------------------------footer--------------------------- -->
-         <div class="mt-20">
-          <div class="text-center">
-            <img src="./images/simple logo 2.png" alt="" class="w-36 mx-auto mb-2 dark:hidden">
-            <img src="./images/simple logo for dark mode 2.png" alt="" class="w-36 mx-auto mb-2 hidden dark:block">
-            <div class="w-max flex items-center gap-2 mx-auto">
-              <img src="./images/mail_icon.png" alt="" class="w-6 dark:hidden">
-              <img src="./images/mail_icon_dark.png" alt="" class="w-6 hidden dark:block">
-              ps5380028@gmail.com
-            </div>
+
+        <!-- Frontend -->
+        <div
+          class="flex flex-col sm:flex-row sm:items-center gap-3 p-4 rounded-xl border border-gray-300 dark:border-white/20 bg-white/60 dark:bg-white/5">
+          <div class="w-full sm:w-48 font-semibold text-gray-800 dark:text-white font-Ovo text-sm sm:text-base flex-shrink-0">
+            Frontend
           </div>
-          <div class="text-center sm:flex items-center justify-between mx-[10%]
-          my-12  pt-6 border-t border-gray-400">
-            <p>@ 2024 Pardeep Singh. All rights reserved</p>
-            <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
-              <li>
-                <a target="_blank" href="https://www.instagram.com/observing.myself_/">
-                  <img src="./images/instagramicon.jpeg" class="w-10 rounded-full" alt="">
-                </a>
-            </li>
-              <li>
-                <a target="_blank" href="https://github.com/pardeepsingh77">
-                  <img src="./images/githubico.png" class="w-10 rounded-full" alt="">
-                </a>
-            </li>
-              <li>
-                <a target="_blank" href="https://www.linkedin.com/in/pardeep-singh-a8b299239/">
-                  <img src="./images/linkedin icon.png" class="w-10 rounded-full" alt="">
-                </a>
-            </li>
-            </ul>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-react-original colored text-base" aria-hidden="true"></i> React.js
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-nextjs-plain text-base" aria-hidden="true"></i> Next.js
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-angularjs-plain colored text-base" aria-hidden="true"></i> AngularJS 1.x
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-html5-plain colored text-base" aria-hidden="true"></i> HTML5
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-css3-plain colored text-base" aria-hidden="true"></i> CSS3
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-tailwindcss-original colored text-base" aria-hidden="true"></i> Tailwind CSS
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-bootstrap-plain colored text-base" aria-hidden="true"></i> Bootstrap
+            </span>
           </div>
-         </div>
+        </div>
+
+        <!-- Backend -->
+        <div
+          class="flex flex-col sm:flex-row sm:items-center gap-3 p-4 rounded-xl border border-gray-300 dark:border-white/20 bg-white/60 dark:bg-white/5">
+          <div class="w-full sm:w-48 font-semibold text-gray-800 dark:text-white font-Ovo text-sm sm:text-base flex-shrink-0">
+            Backend
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-nodejs-plain colored text-base" aria-hidden="true"></i> Node.js
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-express-original text-base" aria-hidden="true"></i> Express.js
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-nestjs-original colored text-base" aria-hidden="true"></i> NestJS
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              REST APIs
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              BullMQ
+            </span>
+          </div>
+        </div>
+
+        <!-- Databases & Caching -->
+        <div
+          class="flex flex-col sm:flex-row sm:items-center gap-3 p-4 rounded-xl border border-gray-300 dark:border-white/20 bg-white/60 dark:bg-white/5">
+          <div class="w-full sm:w-48 font-semibold text-gray-800 dark:text-white font-Ovo text-sm sm:text-base flex-shrink-0">
+            Databases & Caching
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-mongodb-plain colored text-base" aria-hidden="true"></i> MongoDB
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-postgresql-plain colored text-base" aria-hidden="true"></i> PostgreSQL
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-redis-plain colored text-base" aria-hidden="true"></i> Redis
+            </span>
+          </div>
+        </div>
+
+        <!-- Integrations -->
+        <div
+          class="flex flex-col sm:flex-row sm:items-center gap-3 p-4 rounded-xl border border-gray-300 dark:border-white/20 bg-white/60 dark:bg-white/5">
+          <div class="w-full sm:w-48 font-semibold text-gray-800 dark:text-white font-Ovo text-sm sm:text-base flex-shrink-0">
+            Integrations
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="fa-brands fa-shopify text-[#95BF47] text-base" aria-hidden="true"></i> Shopify
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="fa-brands fa-stripe text-[#635BFF] text-base" aria-hidden="true"></i> Stripe
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              Veriff
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              Twilio
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              SendGrid
+            </span>
+          </div>
+        </div>
+
+        <!-- DevOps & Tools -->
+        <div
+          class="flex flex-col sm:flex-row sm:items-center gap-3 p-4 rounded-xl border border-gray-300 dark:border-white/20 bg-white/60 dark:bg-white/5">
+          <div class="w-full sm:w-48 font-semibold text-gray-800 dark:text-white font-Ovo text-sm sm:text-base flex-shrink-0">
+            DevOps & Tools
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-linux-plain text-base" aria-hidden="true"></i> Linux
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-ssh-original text-base" aria-hidden="true"></i> SSH
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-git-plain colored text-base" aria-hidden="true"></i> Git
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-github-original text-base" aria-hidden="true"></i> GitHub
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-bitbucket-original colored text-base" aria-hidden="true"></i> Bitbucket
+            </span>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-white/20 text-xs sm:text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-black/40">
+              <i class="devicon-postman-plain colored text-base" aria-hidden="true"></i> Postman
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------------------Experience----------------------------- -->
+  <div id="experience" class="w-full px-[12%] py-10 scroll-mt-14">
+    <h4 class="text-center mb-2 text-lg font-Ovo">My journey</h4>
+    <h2 class="text-center text-5xl font-Ovo">Experience</h2>
+
+    <div
+      class="max-w-3xl mx-auto my-12 relative border-l-2 border-gray-300 dark:border-gray-700 pl-6 sm:pl-8 ml-4 sm:ml-auto space-y-10">
+      <!-- Role 1 -->
+      <div class="relative">
+        <span
+          class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] border-2 border-white dark:border-black"></span>
+        <div
+          class="border border-gray-400 dark:border-white/40 rounded-xl p-6 hover:shadow-black dark:hover:shadow-white hover:-translate-y-1 transition duration-500 bg-white dark:bg-black/30">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-3">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white font-Ovo">
+              Full Stack Developer <span class="font-normal text-gray-600 dark:text-gray-300">— Esferasoft Solutions Pvt Ltd</span>
+            </h3>
+            <span
+              class="text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-300 font-Ovo px-3 py-1 rounded-full bg-gray-100 dark:bg-white/10 w-fit">04/2025 – Present</span>
+          </div>
+          <ul class="space-y-2 text-sm text-gray-600 dark:text-white/80 leading-6 font-Outfit">
+            <li class="flex items-start gap-2">
+              <span class="text-gray-400 dark:text-gray-500 mt-1">•</span>
+              <span>Built 20+ full-stack web products across finance, e-commerce, real estate, and events, from UI to APIs and databases.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-gray-400 dark:text-gray-500 mt-1">•</span>
+              <span>Integrated payments, identity verification, SMS, and email services, and used queues and caching for background jobs and faster responses.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-gray-400 dark:text-gray-500 mt-1">•</span>
+              <span>Deployed and maintained applications on Linux servers and managed code through Git-based team workflows.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Role 2 -->
+      <div class="relative">
+        <span
+          class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] border-2 border-white dark:border-black"></span>
+        <div
+          class="border border-gray-400 dark:border-white/40 rounded-xl p-6 hover:shadow-black dark:hover:shadow-white hover:-translate-y-1 transition duration-500 bg-white dark:bg-black/30">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-3">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white font-Ovo">
+              Software Engineer <span class="font-normal text-gray-600 dark:text-gray-300">— Acoustte</span>
+            </h3>
+            <span
+              class="text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-300 font-Ovo px-3 py-1 rounded-full bg-gray-100 dark:bg-white/10 w-fit">11/2024 – 04/2025</span>
+          </div>
+          <ul class="space-y-2 text-sm text-gray-600 dark:text-white/80 leading-6 font-Outfit">
+            <li class="flex items-start gap-2">
+              <span class="text-gray-400 dark:text-gray-500 mt-1">•</span>
+              <span>Developed frontend and backend features for an existing product using AngularJS 1.x, Next.js, and Node.js.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-gray-400 dark:text-gray-500 mt-1">•</span>
+              <span>Fixed bugs and improved existing features, supporting ongoing development and maintenance.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Role 3 -->
+      <div class="relative">
+        <span
+          class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] border-2 border-white dark:border-black"></span>
+        <div
+          class="border border-gray-400 dark:border-white/40 rounded-xl p-6 hover:shadow-black dark:hover:shadow-white hover:-translate-y-1 transition duration-500 bg-white dark:bg-black/30">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-3">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white font-Ovo">
+              MERN Stack Intern <span class="font-normal text-gray-600 dark:text-gray-300">— Solitaire Infosys Pvt Ltd</span>
+            </h3>
+            <span
+              class="text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-300 font-Ovo px-3 py-1 rounded-full bg-gray-100 dark:bg-white/10 w-fit">02/2024 – 07/2024</span>
+          </div>
+          <ul class="space-y-2 text-sm text-gray-600 dark:text-white/80 leading-6 font-Outfit">
+            <li class="flex items-start gap-2">
+              <span class="text-gray-400 dark:text-gray-500 mt-1">•</span>
+              <span>Built 3 full-stack web applications using the MERN stack.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-gray-400 dark:text-gray-500 mt-1">•</span>
+              <span>Worked across frontend development, backend APIs, database integration, and bug fixing.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resume download link -->
+    <div class="text-center mt-6">
+      <a href="./resume/Pardeep_Singh_Resume_2026.pdf" download="Pardeep_Singh_Resume_2026.pdf"
+        class="inline-flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white underline-offset-4 hover:underline transition font-Ovo">
+        Download full résumé
+        <i class="fa-solid fa-download text-xs" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- --------------------------Services-------------------------------- -->
+  <div id="services" class="w-full px-[12%] py-10 scroll-mt-14">
+    <h4 class="text-center mb-2 text-lg font-Ovo">What I offer</h4>
+    <h2 class="text-center text-5xl font-Ovo">Services</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-gray-700 dark:text-white/90">
+      I take products from idea to production, covering the interface, the backend, the integrations, and the deployment.
+      I focus on clean structure and code that stays maintainable as the product grows.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
+      <!-- Service 1 -->
+      <div
+        class="border border-gray-400 dark:border-white/40 rounded-xl p-8 hover:shadow-black dark:hover:shadow-white cursor-pointer hover:bg-darkHover dark:hover:bg-white/10 hover:-translate-y-1 transition duration-500 bg-white dark:bg-black/30">
+        <h3 class="text-xl my-3 font-semibold text-gray-800 dark:text-white font-Ovo">🔧 Full-Stack Web Development</h3>
+        <p class="text-sm text-gray-600 leading-6 dark:text-white/80">
+          End-to-end web applications, from the user interface to APIs and databases, built with React, Next.js, Node.js, and MongoDB or PostgreSQL.
+        </p>
+      </div>
+
+      <!-- Service 2 -->
+      <div
+        class="border border-gray-400 dark:border-white/40 rounded-xl p-8 hover:shadow-black dark:hover:shadow-white cursor-pointer hover:bg-darkHover dark:hover:bg-white/10 hover:-translate-y-1 transition duration-500 bg-white dark:bg-black/30">
+        <h3 class="text-xl my-3 font-semibold text-gray-800 dark:text-white font-Ovo">🎨 Frontend Development</h3>
+        <p class="text-sm text-gray-600 leading-6 dark:text-white/80">
+          Responsive, accessible interfaces in React, Next.js, and Tailwind CSS, built for usability, performance, and SEO.
+        </p>
+      </div>
+
+      <!-- Service 3 -->
+      <div
+        class="border border-gray-400 dark:border-white/40 rounded-xl p-8 hover:shadow-black dark:hover:shadow-white cursor-pointer hover:bg-darkHover dark:hover:bg-white/10 hover:-translate-y-1 transition duration-500 bg-white dark:bg-black/30">
+        <h3 class="text-xl my-3 font-semibold text-gray-800 dark:text-white font-Ovo">⚙️ Backend & API Development</h3>
+        <p class="text-sm text-gray-600 leading-6 dark:text-white/80">
+          REST APIs with Node.js, Express, and NestJS, including authentication, role-based access control, and clean data models.
+        </p>
+      </div>
+
+      <!-- Service 4 -->
+      <div
+        class="border border-gray-400 dark:border-white/40 rounded-xl p-8 hover:shadow-black dark:hover:shadow-white cursor-pointer hover:bg-darkHover dark:hover:bg-white/10 hover:-translate-y-1 transition duration-500 bg-white dark:bg-black/30">
+        <h3 class="text-xl my-3 font-semibold text-gray-800 dark:text-white font-Ovo">🔌 Third-Party Integrations</h3>
+        <p class="text-sm text-gray-600 leading-6 dark:text-white/80">
+          Payments with Stripe, Shopify store and inventory sync, identity verification with Veriff, and SMS and email with Twilio and SendGrid.
+        </p>
+      </div>
+
+      <!-- Service 5 -->
+      <div
+        class="border border-gray-400 dark:border-white/40 rounded-xl p-8 hover:shadow-black dark:hover:shadow-white cursor-pointer hover:bg-darkHover dark:hover:bg-white/10 hover:-translate-y-1 transition duration-500 bg-white dark:bg-black/30">
+        <h3 class="text-xl my-3 font-semibold text-gray-800 dark:text-white font-Ovo">⚡ Background Jobs & Performance</h3>
+        <p class="text-sm text-gray-600 leading-6 dark:text-white/80">
+          Queues with BullMQ and Redis caching so heavy work runs in the background and pages respond faster.
+        </p>
+      </div>
+
+      <!-- Service 6 -->
+      <div
+        class="border border-gray-400 dark:border-white/40 rounded-xl p-8 hover:shadow-black dark:hover:shadow-white cursor-pointer hover:bg-darkHover dark:hover:bg-white/10 hover:-translate-y-1 transition duration-500 bg-white dark:bg-black/30">
+        <h3 class="text-xl my-3 font-semibold text-gray-800 dark:text-white font-Ovo">🚀 Deployment & Maintenance</h3>
+        <p class="text-sm text-gray-600 leading-6 dark:text-white/80">
+          Linux server deployments over SSH, Git-based workflows, and ongoing bug fixes and improvements to existing products.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------------------------------portfolio section (mywork)----------------- -->
+  <div id="mywork" class="w-full px-[12%] py-10 scroll-mt-14">
+    <h4 class="text-center mb-2 text-lg font-Ovo headingportfoliosection">What I've built</h4>
+    <h2 class="text-center text-5xl font-Ovo headingportfoliosection">Selected Work</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-gray-700 dark:text-white/90 headingportfoliosection">
+      A selection of products I've built, from multi-role platforms to marketplace integrations and live client sites.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 my-10">
+      <!-- Project 1: Student Finance Simulator -->
+      <div
+        class="card border border-gray-400 dark:border-white/40 rounded-xl p-6 sm:p-7 hover:-translate-y-1 hover:shadow-black dark:hover:shadow-white transition duration-500 bg-white dark:bg-black/30 flex flex-col justify-between">
+        <div>
+          <h3 class="text-2xl font-semibold font-Ovo text-gray-800 dark:text-white">Student Finance Simulator</h3>
+          <p class="text-xs uppercase tracking-wider text-[#b820e6] dark:text-lime-300 font-semibold mt-1 mb-3">
+            Multi-role financial platform
+          </p>
+          <p class="text-sm text-gray-600 dark:text-white/80 leading-relaxed font-Outfit mb-5">
+            A financial management platform with six user roles (Admin, Sub Admin, School, Teacher, Parent, Student), each with separate permissions and workflows. Covers billing, subscriptions, budgeting, student performance tracking, notifications, and analytics.
+          </p>
+        </div>
+        <div>
+          <div class="flex flex-wrap gap-1.5 pt-2">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Role-based access</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Billing & subscriptions</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Analytics</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Fitness Accessories Marketplace -->
+      <div
+        class="card border border-gray-400 dark:border-white/40 rounded-xl p-6 sm:p-7 hover:-translate-y-1 hover:shadow-black dark:hover:shadow-white transition duration-500 bg-white dark:bg-black/30 flex flex-col justify-between">
+        <div>
+          <h3 class="text-2xl font-semibold font-Ovo text-gray-800 dark:text-white">Fitness Accessories Marketplace</h3>
+          <p class="text-xs uppercase tracking-wider text-[#b820e6] dark:text-lime-300 font-semibold mt-1 mb-3">
+            Shopify integration
+          </p>
+          <p class="text-sm text-gray-600 dark:text-white/80 leading-relaxed font-Outfit mb-5">
+            A two-sided marketplace for buying and selling fitness accessories, with admin controls for products, users, and platform activity. Uses Shopify APIs and OAuth with webhooks and BullMQ/Redis to sync products, variants, and inventory between connected stores and the platform.
+          </p>
+        </div>
+        <div>
+          <div class="flex flex-wrap gap-1.5 mb-5">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Shopify API</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">OAuth</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Webhooks</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">BullMQ</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Redis</span>
+          </div>
+          <div class="pt-2 border-t border-gray-200 dark:border-white/10">
+            <a href="https://shopify-allyouneed.onrender.com/" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 dark:border-white text-xs sm:text-sm font-medium hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition duration-300">
+              Live site
+              <img src="./images/send-icon.png" class="w-3.5 dark:invert" alt="" aria-hidden="true">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Fitness & Nutrition Platform -->
+      <div
+        class="card border border-gray-400 dark:border-white/40 rounded-xl p-6 sm:p-7 hover:-translate-y-1 hover:shadow-black dark:hover:shadow-white transition duration-500 bg-white dark:bg-black/30 flex flex-col justify-between">
+        <div>
+          <h3 class="text-2xl font-semibold font-Ovo text-gray-800 dark:text-white">Fitness & Nutrition Platform</h3>
+          <p class="text-xs uppercase tracking-wider text-[#b820e6] dark:text-lime-300 font-semibold mt-1 mb-3">
+            Health & Nutrition Management
+          </p>
+          <p class="text-sm text-gray-600 dark:text-white/80 leading-relaxed font-Outfit mb-5">
+            A comprehensive fitness management platform featuring an admin panel and REST APIs. Enables users to log daily meals to track macro- and micronutrients, record daily activities and workouts, and receive personalized guidance based on their fitness progress.
+          </p>
+        </div>
+        <div>
+          <div class="flex flex-wrap gap-1.5 pt-2">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Admin panel</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">REST APIs</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Nutrient tracking</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Activity guidance</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: Advance Computer Centre — LMS -->
+      <div
+        class="card border border-gray-400 dark:border-white/40 rounded-xl p-6 sm:p-7 hover:-translate-y-1 hover:shadow-black dark:hover:shadow-white transition duration-500 bg-white dark:bg-black/30 flex flex-col justify-between">
+        <div>
+          <h3 class="text-2xl font-semibold font-Ovo text-gray-800 dark:text-white">Advance Computer Centre — LMS</h3>
+          <p class="text-xs uppercase tracking-wider text-[#b820e6] dark:text-lime-300 font-semibold mt-1 mb-3">
+            E-learning site
+          </p>
+          <p class="text-sm text-gray-600 dark:text-white/80 leading-relaxed font-Outfit mb-5">
+            An e-learning site with a complete learning management system, course catalog, student progress monitoring, and academic administrative tools.
+          </p>
+        </div>
+        <div>
+          <div class="flex flex-wrap gap-1.5 mb-5">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">E-learning</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Web app</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Node.js</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">MongoDB</span>
+          </div>
+          <div class="flex flex-wrap gap-3 pt-2 border-t border-gray-200 dark:border-white/10">
+            <a href="https://www.advancecomputercentre.in" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 dark:border-white text-xs sm:text-sm font-medium hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition duration-300">
+              Live site
+              <img src="./images/send-icon.png" class="w-3.5 dark:invert" alt="" aria-hidden="true">
+            </a>
+            <a href="https://github.com/pardeepsingh77/LMS-Site-Manider-Sir" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 dark:border-white text-xs sm:text-sm font-medium hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition duration-300">
+              Code
+              <i class="fa-brands fa-github text-sm" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center my-16">
+      <a href="projects.html"
+        class="group inline-flex items-center justify-center gap-3 text-gray-800 dark:text-white border-[0.5px] border-gray-700 dark:border-white/50 rounded-full py-3.5 px-10 mx-auto hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black hover:scale-105 duration-300 shadow-sm font-Ovo">
+        <span>See more projects</span>
+        <img src="./images/right-arrow-bold.png" alt="" class="w-4 dark:hidden group-hover:translate-x-1.5 transition-transform duration-300" aria-hidden="true">
+        <img src="./images/right-arrow-bold-dark.png" alt="" class="w-4 hidden dark:block group-hover:translate-x-1.5 transition-transform duration-300" aria-hidden="true">
+      </a>
+    </div>
+  </div>
+
+  <!-- --------------------------contact-------------------- -->
+  <div id="contact"
+    class="w-full px-[12%] py-10 scroll-mt-14 bg-[url('./images/footer-bg-color.png')] dark:bg-none bg-no-repeat bg-[length:90%_auto] bg-center">
+    <h4 class="text-center mb-2 text-lg font-Ovo">Have an idea? Let's talk</h4>
+    <h2 class="text-center text-5xl font-Ovo">Get in touch</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-8 font-Ovo text-gray-700 dark:text-white/90">
+      Have a project in mind, or a role you think I'd be a good fit for? Send me a message and I'll get back to you.
+    </p>
+
+    <!-- Contact details & Primary button -->
+    <div class="max-w-xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-6 mb-10 text-center">
+      <a href="mailto:pardeep.codes04@gmail.com"
+        class="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white font-Ovo hover:opacity-90 transition duration-300 shadow-sm">
+        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+        Email me
+      </a>
+      <div class="flex items-center gap-6 text-sm text-gray-700 dark:text-white/90 font-Outfit">
+        <span class="inline-flex items-center gap-2">
+          <i class="fa-solid fa-location-dot text-gray-500 dark:text-gray-300" aria-hidden="true"></i> Mohali, India
+        </span>
+      </div>
+    </div>
+
+    <!-- Contact form -->
+    <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+      <input type="hidden" name="access_key" value="a80c56e4-93d0-433c-be33-1487b0e5295d">
+      <input type="hidden" name="from_name" value="Portfolio Contact Form">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6 mb-6">
+        <input type="text" placeholder="Enter your name" name="name"
+          class="w-full p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-slate-800 text-gray-800 dark:text-white"
+          required aria-label="Your Name">
+        <input type="email" placeholder="Enter your email" name="email"
+          class="w-full p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-slate-800 text-gray-800 dark:text-white"
+          required aria-label="Your Email">
+      </div>
+      <textarea rows="6" placeholder="Enter your message" name="message"
+        class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-slate-800 text-gray-800 dark:text-white"
+        required aria-label="Your Message"></textarea>
+      <button type="submit"
+        class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-white dark:text-black dark:hover:bg-lime-400 font-Ovo">
+        Connect
+        <img src="./images/right-arrow-white.png" class="w-4 dark:hidden" alt="" aria-hidden="true">
+        <img src="./images/right-arrow-bold.png" class="w-4 hidden dark:block" alt="" aria-hidden="true">
+      </button>
+    </form>
+  </div>
+
+  <!-- -------------------------------footer--------------------------- -->
+  <footer class="mt-20">
+    <div class="text-center">
+      <img src="./images/simple logo 2.png" alt="Pardeep Singh Logo" class="w-36 mx-auto mb-2 dark:hidden">
+      <img src="./images/simple logo for dark mode 2.png" alt="Pardeep Singh Logo"
+        class="w-36 mx-auto mb-2 hidden dark:block">
+      <div class="w-max flex items-center gap-2 mx-auto text-gray-700 dark:text-white/90">
+        <img src="./images/mail_icon.png" alt="" class="w-6 dark:hidden" aria-hidden="true">
+        <img src="./images/mail_icon_dark.png" alt="" class="w-6 hidden dark:block" aria-hidden="true">
+        <a href="mailto:pardeep.codes04@gmail.com" class="hover:underline">pardeep.codes04@gmail.com</a>
+      </div>
+    </div>
+    <div class="text-center sm:flex items-center justify-between mx-[10%] my-12 pt-6 border-t border-gray-400">
+      <p class="text-gray-700 dark:text-white/80">© <span class="current-year">2026</span> Pardeep Singh. All rights reserved.</p>
+      <ul class="flex items-center gap-6 justify-center mt-4 sm:mt-0">
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/pardeepsingh77"
+            aria-label="GitHub Profile"
+            class="w-10 h-10 rounded-full border border-gray-400 dark:border-white/40 flex items-center justify-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition">
+            <i class="fa-brands fa-github text-xl" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/pardeep-codes"
+            aria-label="LinkedIn Profile"
+            class="w-10 h-10 rounded-full border border-gray-400 dark:border-white/40 flex items-center justify-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition">
+            <i class="fa-brands fa-linkedin-in text-xl" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 <script src="index.js"></script>
+
 </html>

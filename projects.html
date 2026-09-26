@@ -1,404 +1,587 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects - PS</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./tailwind.config.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./images/my pic2-photoaidcom-cropped.jpg">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Pardeep Singh | Full Stack Developer (React, Next.js, Node.js)</title>
+  <meta name="description"
+    content="Full Stack Developer with 1.5+ years of experience shipping 20+ web products across finance, e-commerce, real estate, and events. React, Next.js, Node.js, NestJS, PostgreSQL, MongoDB, Redis.">
+  <link rel="canonical" href="https://pardeepsingh.netlify.app/projects.html">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pardeepsingh.netlify.app/projects.html">
+  <meta property="og:title" content="Projects | Pardeep Singh | Full Stack Developer (React, Next.js, Node.js)">
+  <meta property="og:description"
+    content="Full Stack Developer with 1.5+ years of experience shipping 20+ web products across finance, e-commerce, real estate, and events. React, Next.js, Node.js, NestJS, PostgreSQL, MongoDB, Redis.">
+  <meta property="og:image" content="https://pardeepsingh.netlify.app/images/og-image.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://pardeepsingh.netlify.app/projects.html">
+  <meta name="twitter:title" content="Projects | Pardeep Singh | Full Stack Developer (React, Next.js, Node.js)">
+  <meta name="twitter:description"
+    content="Full Stack Developer with 1.5+ years of experience shipping 20+ web products across finance, e-commerce, real estate, and events. React, Next.js, Node.js, NestJS, PostgreSQL, MongoDB, Redis.">
+  <meta name="twitter:image" content="https://pardeepsingh.netlify.app/images/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+
+  <!-- JSON-LD Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pardeep Singh",
+    "jobTitle": "Full Stack Developer",
+    "url": "https://pardeepsingh.netlify.app/",
+    "email": "pardeep.codes04@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mohali",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/pardeep-codes",
+      "https://github.com/pardeepsingh77"
+    ]
+  }
+  </script>
+
+  <!-- Tailwind and Styles -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./tailwind.config.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
+
 <body class="overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
-    <!-- -------------------------Navbar------------------------ -->
-    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
-        <img src="./images/header-bg-color.png" class="w-full" alt="">
-    </div>
-    <nav class=" w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
-        <a href="index.html">
-            <img src="./images/simple logo 2.png" class="w-28 md:w-32 dark:hidden" alt="">
-            <img src="./images/simple logo for dark mode 2.png" class="w-28 md:w-32 hidden dark:block" alt="">
+  <!-- -------------------------Navbar------------------------ -->
+  <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
+    <img src="./images/header-bg-color.png" class="w-full" alt="" aria-hidden="true">
+  </div>
+  <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+    <a href="index.html#top" aria-label="Pardeep Singh Portfolio Home">
+      <img src="./images/simple logo 2.png" class="w-28 md:w-32 dark:hidden" alt="Pardeep Singh Logo">
+      <img src="./images/simple logo for dark mode 2.png" class="w-28 md:w-32 hidden dark:block"
+        alt="Pardeep Singh Logo">
+    </a>
+    <ul
+      class="hidden md:flex gap-6 lg:gap-8 items-center rounded-full px-10 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/50 dark:bg-transparent">
+      <li class="group relative inline-block">
+        <a href="index.html#top" class="relative inline-block group" onclick="closeSideMenu()">
+          Home
+          <span
+            class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
         </a>
-        <ul class="hidden md:flex gap-6 lg:gap-8 items-center rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/50 dark:bg-transparent">
-            <li class="group relative inline-block">
-                <a href="index.html#top" class="relative inline-block group" onclick="closeSideMenu()">
-                  Home
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out "></span>
-                </a>
-              </li>
-              
-              <li class="group relative inline-block">
-                <a href="index.html#about" class="relative inline-block" onclick="closeSideMenu()">
-                  About Me
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-                </a>
-              </li>
-              <li class="group relative inline-block">
-                <a href="index.html#services" class="relative inline-block" onclick="closeSideMenu()">
-                  Services
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-                </a>
-              </li>
-              <li class="group relative inline-block">
-                <a href="index.html#mywork" class="relative inline-block" onclick="closeSideMenu()">
-                  My Work
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-                </a>
-              </li>
-              <li class="group relative inline-block">
-                <a href="index.html#contact" class="relative inline-block" onclick="closeSideMenu()">
-                  Contact Me
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-                </a>
-              </li>
-        </ul>
-        <div class="flex items-center gap-4">
-        <button onclick="toggleTheme()">
-          <img src="./images/moon_icon.png" class="w-6 dark:hidden" alt="">
-          <img src="./images/sun_icon.png" class="w-6 hidden dark:block" alt="">
-        </button>
-        <a href="index.html#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 bg-gradient-to-t from-[gray] to-[black] text-white transition duration-300 font-Ovo dark:border-white/50 dark:bg-none">Contact <i class="fa-solid fa-arrow-up-right-from-square w-6"></i></a>
-        <button class="block md:hidden ml-3" onclick="getSideMenu()">
-          <img src="./images/menu-black.png" class="w-6 dark:hidden" alt="">
-          <img src="./images/menu-white.png" class="w-6 hidden dark:block" alt="">
-        </button>
+      </li>
+      <li class="group relative inline-block">
+        <a href="index.html#about" class="relative inline-block" onclick="closeSideMenu()">
+          About
+          <span
+            class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+        </a>
+      </li>
+      <li class="group relative inline-block">
+        <a href="index.html#experience" class="relative inline-block" onclick="closeSideMenu()">
+          Experience
+          <span
+            class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+        </a>
+      </li>
+      <li class="group relative inline-block">
+        <a href="index.html#services" class="relative inline-block" onclick="closeSideMenu()">
+          Services
+          <span
+            class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+        </a>
+      </li>
+      <li class="group relative inline-block">
+        <a href="index.html#mywork" class="relative inline-block" onclick="closeSideMenu()">
+          Work
+          <span
+            class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+        </a>
+      </li>
+      <li class="group relative inline-block">
+        <a href="index.html#contact" class="relative inline-block" onclick="closeSideMenu()">
+          Contact
+          <span
+            class="block absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+        </a>
+      </li>
+    </ul>
+    <div class="flex items-center gap-4">
+      <button onclick="toggleTheme()" aria-label="Toggle dark mode" class="p-1">
+        <img src="./images/moon_icon.png" class="w-6 dark:hidden" alt="Switch to dark mode">
+        <img src="./images/sun_icon.png" class="w-6 hidden dark:block" alt="Switch to light mode">
+      </button>
+      <a href="index.html#contact"
+        class="hidden lg:flex items-center gap-3 px-8 py-2.5 border border-gray-500 rounded-full ml-2 bg-gradient-to-t from-[gray] to-[black] text-white transition duration-300 font-Ovo dark:border-white/50 dark:bg-none hover:opacity-90">
+        Contact
+        <i class="fa-solid fa-arrow-up-right-from-square w-4" aria-hidden="true"></i>
+      </a>
+      <button class="block md:hidden ml-2 p-1" onclick="getSideMenu()" aria-label="Open mobile menu">
+        <img src="./images/menu-black.png" class="w-6 dark:hidden" alt="Open menu">
+        <img src="./images/menu-white.png" class="w-6 hidden dark:block" alt="Open menu">
+      </button>
 
-        <!-- ----------------------------sideMenu---------------------------- -->
-         <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-[gray]  transition duration-500 dark:bg-[#2a004a]">
-            <div class="absolute right-6 top-6">
-                <img onclick="closeSideMenu()" src="./images/close-black.png" class="w-5 cursor-pointer dark:hidden" alt="">
-                <img onclick="closeSideMenu()" src="./images/close-white.png" class="w-5 cursor-pointer hidden dark:block" alt="">
-            </div>
-            <li class="group relative inline-block">
-                <a href="index.html#top" class="relative inline-block group" onclick="closeSideMenu()">
-                  Home
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-                </a>
-              </li>
-              
-              <li class="group relative inline-block">
-                <a href="index.html#about" class="relative inline-block" onclick="closeSideMenu()">
-                  About Me
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-                </a>
-              </li>
-              <li class="group relative inline-block">
-                <a href="index.html#services" class="relative inline-block" onclick="closeSideMenu()">
-                  Services
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-                </a>
-              </li>
-              <li class="group relative inline-block">
-                <a href="index.html#mywork" class="relative inline-block" onclick="closeSideMenu()">
-                  My Work
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-                </a>
-              </li>
-              <li class="group relative inline-block">
-                <a href="index.html#contact" class="relative inline-block" onclick="closeSideMenu()">
-                  Contact Me
-                  <span class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-                </a>
-              </li>
-              
-         </ul>
+      <!-- ----------------------------sideMenu---------------------------- -->
+      <ul id="sideMenu"
+        class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-[gray] transition duration-500 dark:bg-[#2a004a]">
+        <div class="absolute right-6 top-6">
+          <button onclick="closeSideMenu()" aria-label="Close mobile menu" class="p-1">
+            <img src="./images/close-black.png" class="w-5 cursor-pointer dark:hidden" alt="Close menu">
+            <img src="./images/close-white.png" class="w-5 cursor-pointer hidden dark:block" alt="Close menu">
+          </button>
+        </div>
+        <li class="group relative inline-block">
+          <a href="index.html#top" class="relative inline-block group" onclick="closeSideMenu()">
+            Home
+            <span
+              class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+          </a>
+        </li>
+        <li class="group relative inline-block">
+          <a href="index.html#about" class="relative inline-block" onclick="closeSideMenu()">
+            About
+            <span
+              class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+          </a>
+        </li>
+        <li class="group relative inline-block">
+          <a href="index.html#experience" class="relative inline-block" onclick="closeSideMenu()">
+            Experience
+            <span
+              class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+          </a>
+        </li>
+        <li class="group relative inline-block">
+          <a href="index.html#services" class="relative inline-block" onclick="closeSideMenu()">
+            Services
+            <span
+              class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+          </a>
+        </li>
+        <li class="group relative inline-block">
+          <a href="index.html#mywork" class="relative inline-block" onclick="closeSideMenu()">
+            Work
+            <span
+              class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+          </a>
+        </li>
+        <li class="group relative inline-block">
+          <a href="index.html#contact" class="relative inline-block" onclick="closeSideMenu()">
+            Contact
+            <span
+              class="block absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+          </a>
+        </li>
+      </ul>
     </div>
-    </nav>
+  </nav>
 
-    <!-- -------------------------Projects Header------------------------ -->
-    <div class="pt-24 pb-12 px-[12%] text-center">
-        <h4 class="mb-2 text-lg font-Ovo">Portfolio Showcase</h4>
-        <h1 class="text-4xl md:text-6xl lg:text-7xl font-Ovo mb-4">My Projects</h1>
-        <p class="max-w-3xl mx-auto font-Ovo text-lg">A curated collection of my work showcasing full-stack development expertise, innovative solutions, and real-world applications built with modern technologies.</p>
-    </div>
+  <!-- -------------------------Projects Header------------------------ -->
+  <div class="pt-32 pb-10 px-[12%] text-center">
+    <a href="index.html#mywork"
+      class="inline-flex items-center gap-2 text-sm text-gray-600 dark:text-white/70 hover:text-black dark:hover:text-white transition duration-200 mb-6 font-Outfit border border-gray-300 dark:border-white/20 rounded-full px-5 py-2 hover:bg-gray-100 dark:hover:bg-white/10 shadow-sm">
+      <i class="fa-solid fa-arrow-left text-xs" aria-hidden="true"></i> Back to Home
+    </a>
+    <h4 class="mb-2 text-lg font-Ovo text-gray-600 dark:text-white/80">Full Portfolio & Case Studies</h4>
+    <h1 class="text-4xl md:text-6xl font-Ovo mb-4 text-gray-900 dark:text-white">Selected Work & Projects</h1>
+    <p class="max-w-2xl mx-auto font-Ovo text-base sm:text-lg text-gray-700 dark:text-white/90 leading-relaxed">
+      A comprehensive showcase of production web applications, SaaS platforms, marketplace integrations, and backend architectures I've engineered and shipped.
+    </p>
+  </div>
 
-    <!-- -------------------------Projects Section------------------------ -->
-    <div class="w-full px-[12%] py-10">
-        <!-- Project 1: Shopify -->
-        <div class="mb-20 md:mb-32">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                <div class="card aspect-square bg-[url('./images/online.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative group order-2 lg:order-1">
-                    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                        <div>
-                            <h2 class="font-semibold text-black">Shopify</h2>
-                            <p class="text-sm text-gray-700">E-Commerce Web</p>
-                        </div>
-                        <div class="flex gap-2">
-                            <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                                <a href="https://shopify-allyouneed.onrender.com/" target="_blank"><img src="./images/send-icon.png" class="w-5 cursor-pointer" alt=""></a>
-                            </div>
-                            <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                                <a href="https://github.com/pardeepsingh77/LMS-Site-Manider-Sir" class="flex justify-center items-center" target="_blank"><box-icon type='logo' name='github'></box-icon></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="order-1 lg:order-2">
-                    <h2 class="text-3xl md:text-4xl font-Ovo mb-4 text-gray-700 dark:text-white">Shopify - E-Commerce Platform</h2>
-                    <p class="text-gray-600 dark:text-white/80 mb-6 font-Ovo leading-relaxed">
-                        A full-featured e-commerce web application built with modern web technologies. This platform provides a seamless shopping experience with user authentication, product management, shopping cart functionality, and secure payment processing.
-                    </p>
-                    <div class="mb-6">
-                        <h3 class="text-lg font-semibold text-gray-700 dark:text-white mb-3 font-Ovo">Key Features:</h3>
-                        <ul class="space-y-2 text-gray-600 dark:text-white/80 font-Ovo">
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>User authentication and authorization system</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>Product catalog with search and filtering</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>Shopping cart and checkout process</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>Order management and tracking</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>Responsive design for all devices</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-white font-Ovo">React.js</span>
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-white font-Ovo">Node.js</span>
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-white font-Ovo">MongoDB</span>
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-white font-Ovo">Express.js</span>
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-white font-Ovo">Tailwind CSS</span>
-                    </div>
-                </div>
-            </div>
+  <!-- -------------------------Projects Section------------------------ -->
+  <div class="w-full px-[6%] lg:px-[10%] xl:px-[12%] py-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-8">
+      <!-- Project 1: Student Finance Simulator -->
+      <div
+        class="card group border border-gray-300 dark:border-white/15 rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl dark:hover:shadow-white/10 transition-all duration-500 bg-white dark:bg-[#111116] flex flex-col justify-between">
+        <div>
+          <!-- Visual Project Banner -->
+          <div class="relative w-full aspect-[16/10] overflow-hidden bg-gray-100 dark:bg-black/50">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+              alt="Student Finance Simulator Platform Mockup"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+              fetchpriority="high">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-md bg-black/60 text-white border border-white/20">
+              Fintech Platform
+            </span>
+          </div>
+          <div class="p-6 sm:p-7 pb-2">
+            <p class="text-xs uppercase tracking-wider text-[#b820e6] dark:text-lime-300 font-semibold mb-1">
+              Multi-role financial platform
+            </p>
+            <h2 class="text-2xl font-bold font-Ovo text-gray-900 dark:text-white group-hover:text-[#b820e6] dark:group-hover:text-lime-300 transition-colors duration-300 mb-3">
+              Student Finance Simulator
+            </h2>
+            <p class="text-sm text-gray-600 dark:text-white/80 leading-relaxed font-Outfit mb-5">
+              A financial management platform with six user roles (Admin, Sub Admin, School, Teacher, Parent, Student), each with separate permissions and workflows. Covers billing, subscriptions, budgeting, student performance tracking, notifications, and analytics.
+            </p>
+          </div>
         </div>
-
-        <!-- Project 2: LMS Site -->
-        <div class="mb-20 md:mb-32">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                <div class="order-1 lg:order-1">
-                    <h2 class="text-3xl md:text-4xl font-Ovo mb-4 text-gray-700 dark:text-white">LMS Site - E-Learning Platform</h2>
-                    <p class="text-gray-600 dark:text-white/80 mb-6 font-Ovo leading-relaxed">
-                        An advanced Learning Management System designed for educational institutions. This platform enables seamless course delivery, student management, and interactive learning experiences with comprehensive administrative tools.
-                    </p>
-                    <div class="mb-6">
-                        <h3 class="text-lg font-semibold text-gray-700 dark:text-white mb-3 font-Ovo">Key Features:</h3>
-                        <ul class="space-y-2 text-gray-600 dark:text-white/80 font-Ovo">
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>Course creation and management system</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>Student enrollment and progress tracking</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>Interactive assignments and assessments</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>Real-time notifications and messaging</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>Analytics dashboard for administrators</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-white font-Ovo">React.js</span>
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-white font-Ovo">Node.js</span>
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-white font-Ovo">MongoDB</span>
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-white font-Ovo">Express.js</span>
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-white font-Ovo">MERN Stack</span>
-                    </div>
-                </div>
-                <div class="card aspect-square bg-[url('./images/image1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative group order-2 lg:order-2">
-                    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                        <div>
-                            <h2 class="font-semibold text-black">LMS Site</h2>
-                            <p class="text-sm text-gray-700">E-Learning Site</p>
-                        </div>
-                        <div class="flex gap-2">
-                            <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                                <a href="https://www.advancecomputercentre.in" target="_blank"> <img src="./images/send-icon.png" class="w-5 cursor-pointer" alt=""></a>
-                            </div>
-                            <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                                <a href="https://github.com/pardeepsingh77/LMS-Site-Manider-Sir" class="flex justify-center items-center" target="_blank"><box-icon type='logo' name='github'></box-icon></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="px-6 sm:px-7 pb-6">
+          <div class="flex flex-wrap gap-1.5 mb-5">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Role-based access</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Billing & subscriptions</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Analytics</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Budgeting</span>
+          </div>
+          <div class="pt-3 border-t border-gray-200 dark:border-white/10 flex items-center justify-between">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-purple-50 text-purple-700 dark:bg-purple-950/40 dark:text-purple-300 border border-purple-200 dark:border-purple-800/40 font-Outfit">
+              <i class="fa-solid fa-layer-group text-[10px]" aria-hidden="true"></i> Enterprise Platform
+            </span>
+          </div>
         </div>
+      </div>
 
-        <!-- Project 3: Styx Sports -->
-        <div class="mb-20 md:mb-32">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                <div class="card aspect-square bg-[url('./images/image2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative group order-2 lg:order-1">
-                    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                        <div>
-                            <h2 class="font-semibold text-black">Styx Sports</h2>
-                            <p class="text-sm text-gray-700">Cricket Streaming Site</p>
-                        </div>
-                        <div class="flex gap-2">
-                            <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                                <a href="https://styxsports.com" target="_blank"><img src="./images/send-icon.png" class="w-5 cursor-pointer" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="order-1 lg:order-2">
-                    <h2 class="text-3xl md:text-4xl font-Ovo mb-4 text-gray-700 dark:text-white">Styx Sports - Cricket Streaming Platform</h2>
-                    <p class="text-gray-600 dark:text-white/80 mb-6 font-Ovo leading-relaxed">
-                        A dedicated sports streaming platform focused on cricket content. Built to deliver high-quality live streams, match highlights, and comprehensive sports coverage with an intuitive user interface and seamless playback experience.
-                    </p>
-                    <div class="mb-6">
-                        <h3 class="text-lg font-semibold text-gray-700 dark:text-white mb-3 font-Ovo">Key Features:</h3>
-                        <ul class="space-y-2 text-gray-600 dark:text-white/80 font-Ovo">
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>Live cricket match streaming</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>Match schedules and scorecards</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>Video player with quality controls</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>Match highlights and replays</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>Responsive design for mobile viewing</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-white font-Ovo">React.js</span>
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-white font-Ovo">Node.js</span>
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-white font-Ovo">Video Streaming</span>
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-white font-Ovo">Express.js</span>
-                    </div>
-                </div>
-            </div>
+      <!-- Project 2: Fitness Accessories Marketplace -->
+      <div
+        class="card group border border-gray-300 dark:border-white/15 rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl dark:hover:shadow-white/10 transition-all duration-500 bg-white dark:bg-[#111116] flex flex-col justify-between">
+        <div>
+          <!-- Visual Project Banner -->
+          <div class="relative w-full aspect-[16/10] overflow-hidden bg-gray-100 dark:bg-black/50">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"
+              alt="Fitness Accessories Marketplace Preview"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+              fetchpriority="high">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-md bg-black/60 text-white border border-white/20">
+              Shopify Marketplace
+            </span>
+            <span class="absolute top-3.5 right-3.5 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-medium backdrop-blur-md bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Live
+            </span>
+          </div>
+          <div class="p-6 sm:p-7 pb-2">
+            <p class="text-xs uppercase tracking-wider text-[#b820e6] dark:text-lime-300 font-semibold mb-1">
+              Shopify integration
+            </p>
+            <h2 class="text-2xl font-bold font-Ovo text-gray-900 dark:text-white group-hover:text-[#b820e6] dark:group-hover:text-lime-300 transition-colors duration-300 mb-3">
+              Fitness Accessories Marketplace
+            </h2>
+            <p class="text-sm text-gray-600 dark:text-white/80 leading-relaxed font-Outfit mb-5">
+              A two-sided marketplace for buying and selling fitness accessories, with admin controls for products, users, and platform activity. Uses Shopify APIs and OAuth with webhooks and BullMQ/Redis to sync products, variants, and inventory between connected stores and the platform.
+            </p>
+          </div>
         </div>
-
-        <!-- Project 4: Reeipo -->
-        <div class="mb-20 md:mb-32">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                <div class="order-1 lg:order-1">
-                    <h2 class="text-3xl md:text-4xl font-Ovo mb-4 text-gray-700 dark:text-white">Reeipo - Real Estate Platform</h2>
-                    <p class="text-gray-600 dark:text-white/80 mb-6 font-Ovo leading-relaxed">
-                        A comprehensive real estate platform connecting buyers, sellers, and agents. Features advanced property search, detailed listings, virtual tours, and seamless communication tools to streamline the property buying and selling process.
-                    </p>
-                    <div class="mb-6">
-                        <h3 class="text-lg font-semibold text-gray-700 dark:text-white mb-3 font-Ovo">Key Features:</h3>
-                        <ul class="space-y-2 text-gray-600 dark:text-white/80 font-Ovo">
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>Advanced property search and filters</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>Detailed property listings with images</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>Agent and buyer communication system</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>Property comparison and favorites</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-blue-500 mt-1">•</span>
-                                <span>Location-based search with maps</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-white font-Ovo">React.js</span>
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-white font-Ovo">Node.js</span>
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-white font-Ovo">MongoDB</span>
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-white font-Ovo">Express.js</span>
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-white font-Ovo">Real Estate API</span>
-                    </div>
-                </div>
-                <div class="card aspect-square bg-[url('./images/image.png')] bg-no-repeat bg-cover bg-right rounded-lg relative group order-2 lg:order-2">
-                    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                        <div>
-                            <h2 class="font-semibold text-black">Reeipo</h2>
-                            <p class="text-sm text-gray-700">Real Estate Site</p>
-                        </div>
-                        <div class="flex gap-2">
-                            <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                                <a href="https://reeipo-new.vipankumar.in/" target="_blank"><img src="./images/send-icon.png" class="w-5 cursor-pointer" alt=""> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Call to Action -->
-        <div class="text-center py-12 border-t border-gray-400 mt-20">
-            <h3 class="text-2xl md:text-3xl font-Ovo mb-4 text-gray-700 dark:text-white">Interested in Working Together?</h3>
-            <p class="text-gray-600 dark:text-white/80 mb-8 font-Ovo max-w-2xl mx-auto">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Let's create something amazing together!</p>
-            <a href="index.html#contact" class="inline-flex items-center gap-2 px-10 py-4 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white font-Ovo hover:scale-105 transition duration-300">
-                Get In Touch
-                <img src="./images/right-arrow-white.png" class="w-4" alt="">
+        <div class="px-6 sm:px-7 pb-6">
+          <div class="flex flex-wrap gap-1.5 mb-5">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Shopify API</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">OAuth</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Webhooks</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">BullMQ</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Redis</span>
+          </div>
+          <div class="pt-3 border-t border-gray-200 dark:border-white/10 flex items-center justify-between">
+            <a href="https://shopify-allyouneed.onrender.com/" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 dark:border-white text-xs sm:text-sm font-medium hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition duration-300">
+              Live site
+              <img src="./images/send-icon.png" class="w-3.5 dark:invert" alt="" aria-hidden="true">
             </a>
+            <span class="text-xs text-gray-500 dark:text-white/60 font-Outfit">Production E-Comm</span>
+          </div>
         </div>
+      </div>
+
+      <!-- Project 3: Fitness & Nutrition Platform -->
+      <div
+        class="card group border border-gray-300 dark:border-white/15 rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl dark:hover:shadow-white/10 transition-all duration-500 bg-white dark:bg-[#111116] flex flex-col justify-between">
+        <div>
+          <!-- Visual Project Banner -->
+          <div class="relative w-full aspect-[16/10] overflow-hidden bg-gray-100 dark:bg-black/50">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80"
+              alt="Fitness & Nutrition Platform Meal Tracker Mockup"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+              fetchpriority="high">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-md bg-black/60 text-white border border-white/20">
+              Health & Wellness
+            </span>
+          </div>
+          <div class="p-6 sm:p-7 pb-2">
+            <p class="text-xs uppercase tracking-wider text-[#b820e6] dark:text-lime-300 font-semibold mb-1">
+              Health & Nutrition Management
+            </p>
+            <h2 class="text-2xl font-bold font-Ovo text-gray-900 dark:text-white group-hover:text-[#b820e6] dark:group-hover:text-lime-300 transition-colors duration-300 mb-3">
+              Fitness & Nutrition Platform
+            </h2>
+            <p class="text-sm text-gray-600 dark:text-white/80 leading-relaxed font-Outfit mb-5">
+              A comprehensive fitness management platform featuring an admin panel and REST APIs. Enables users to log daily meals to track macro- and micronutrients, record daily activities and workouts, and receive personalized guidance based on their fitness progress.
+            </p>
+          </div>
+        </div>
+        <div class="px-6 sm:px-7 pb-6">
+          <div class="flex flex-wrap gap-1.5 mb-5">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Admin panel</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">REST APIs</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Nutrient tracking</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Activity guidance</span>
+          </div>
+          <div class="pt-3 border-t border-gray-200 dark:border-white/10 flex items-center justify-between">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/40 font-Outfit">
+              <i class="fa-solid fa-heart-pulse text-[10px]" aria-hidden="true"></i> Full-Stack System
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: Solar Plant Management System -->
+      <div
+        class="card group border border-gray-300 dark:border-white/15 rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl dark:hover:shadow-white/10 transition-all duration-500 bg-white dark:bg-[#111116] flex flex-col justify-between">
+        <div>
+          <!-- Visual Project Banner -->
+          <div class="relative w-full aspect-[16/10] overflow-hidden bg-gray-100 dark:bg-black/50">
+            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80"
+              alt="Solar Plant Energy Station Monitoring Mockup"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+              loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-md bg-black/60 text-white border border-white/20">
+              Clean Energy
+            </span>
+          </div>
+          <div class="p-6 sm:p-7 pb-2">
+            <p class="text-xs uppercase tracking-wider text-[#b820e6] dark:text-lime-300 font-semibold mb-1">
+              Backend development
+            </p>
+            <h2 class="text-2xl font-bold font-Ovo text-gray-900 dark:text-white group-hover:text-[#b820e6] dark:group-hover:text-lime-300 transition-colors duration-300 mb-3">
+              Solar Plant Management System
+            </h2>
+            <p class="text-sm text-gray-600 dark:text-white/80 leading-relaxed font-Outfit mb-5">
+              The backend and REST APIs for a solar plant management system, implementing core business logic and plant management workflows, with database operations, API integrations, and backend services.
+            </p>
+          </div>
+        </div>
+        <div class="px-6 sm:px-7 pb-6">
+          <div class="flex flex-wrap gap-1.5 mb-5">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">REST APIs</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Backend</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Database</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">IoT Telemetry</span>
+          </div>
+          <div class="pt-3 border-t border-gray-200 dark:border-white/10 flex items-center justify-between">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-300 border border-amber-200 dark:border-amber-800/40 font-Outfit">
+              <i class="fa-solid fa-solar-panel text-[10px]" aria-hidden="true"></i> IoT Backend
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5: Styx Sports -->
+      <div
+        class="card group border border-gray-300 dark:border-white/15 rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl dark:hover:shadow-white/10 transition-all duration-500 bg-white dark:bg-[#111116] flex flex-col justify-between">
+        <div>
+          <!-- Visual Project Banner -->
+          <div class="relative w-full aspect-[16/10] overflow-hidden bg-gray-100 dark:bg-black/50">
+            <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80"
+              alt="Styx Sports Cricket Streaming Stadium"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+              loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-md bg-black/60 text-white border border-white/20">
+              Live Sports
+            </span>
+            <span class="absolute top-3.5 right-3.5 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-medium backdrop-blur-md bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Live
+            </span>
+          </div>
+          <div class="p-6 sm:p-7 pb-2">
+            <p class="text-xs uppercase tracking-wider text-[#b820e6] dark:text-lime-300 font-semibold mb-1">
+              Cricket streaming platform
+            </p>
+            <h2 class="text-2xl font-bold font-Ovo text-gray-900 dark:text-white group-hover:text-[#b820e6] dark:group-hover:text-lime-300 transition-colors duration-300 mb-3">
+              Styx Sports
+            </h2>
+            <p class="text-sm text-gray-600 dark:text-white/80 leading-relaxed font-Outfit mb-5">
+              A high-performance cricket streaming website delivering live video broadcast streams, interactive scoreboard updates, fast load times, and a responsive viewer experience across all devices.
+            </p>
+          </div>
+        </div>
+        <div class="px-6 sm:px-7 pb-6">
+          <div class="flex flex-wrap gap-1.5 mb-5">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Streaming</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Web app</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Video CDN</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Responsive UI</span>
+          </div>
+          <div class="pt-3 border-t border-gray-200 dark:border-white/10 flex items-center justify-between">
+            <a href="https://styxsports.com" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 dark:border-white text-xs sm:text-sm font-medium hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition duration-300">
+              Live site
+              <img src="./images/send-icon.png" class="w-3.5 dark:invert" alt="" aria-hidden="true">
+            </a>
+            <span class="text-xs text-gray-500 dark:text-white/60 font-Outfit">Live Broadcast</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6: Reeipo -->
+      <div
+        class="card group border border-gray-300 dark:border-white/15 rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl dark:hover:shadow-white/10 transition-all duration-500 bg-white dark:bg-[#111116] flex flex-col justify-between">
+        <div>
+          <!-- Visual Project Banner -->
+          <div class="relative w-full aspect-[16/10] overflow-hidden bg-gray-100 dark:bg-black/50">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80"
+              alt="Reeipo Real Estate Property Portal Mockup"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+              loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-md bg-black/60 text-white border border-white/20">
+              Real Estate
+            </span>
+            <span class="absolute top-3.5 right-3.5 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-medium backdrop-blur-md bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Live
+            </span>
+          </div>
+          <div class="p-6 sm:p-7 pb-2">
+            <p class="text-xs uppercase tracking-wider text-[#b820e6] dark:text-lime-300 font-semibold mb-1">
+              Property marketplace
+            </p>
+            <h2 class="text-2xl font-bold font-Ovo text-gray-900 dark:text-white group-hover:text-[#b820e6] dark:group-hover:text-lime-300 transition-colors duration-300 mb-3">
+              Reeipo
+            </h2>
+            <p class="text-sm text-gray-600 dark:text-white/80 leading-relaxed font-Outfit mb-5">
+              A modern real estate portal connecting buyers, sellers, and agents with multi-parameter property search, interactive location filtering, rich property listings, and direct lead generation.
+            </p>
+          </div>
+        </div>
+        <div class="px-6 sm:px-7 pb-6">
+          <div class="flex flex-wrap gap-1.5 mb-5">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Real estate</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Web app</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Property search</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Filters</span>
+          </div>
+          <div class="pt-3 border-t border-gray-200 dark:border-white/10 flex items-center justify-between">
+            <a href="https://reeipo-new.vipankumar.in/" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 dark:border-white text-xs sm:text-sm font-medium hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition duration-300">
+              Live site
+              <img src="./images/send-icon.png" class="w-3.5 dark:invert" alt="" aria-hidden="true">
+            </a>
+            <span class="text-xs text-gray-500 dark:text-white/60 font-Outfit">Production Site</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 7: Advance Computer Centre — LMS -->
+      <div
+        class="card group border border-gray-300 dark:border-white/15 rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl dark:hover:shadow-white/10 transition-all duration-500 bg-white dark:bg-[#111116] flex flex-col justify-between">
+        <div>
+          <!-- Visual Project Banner -->
+          <div class="relative w-full aspect-[16/10] overflow-hidden bg-gray-100 dark:bg-black/50">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+              alt="Advance Computer Centre LMS Digital Classroom Preview"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+              loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-md bg-black/60 text-white border border-white/20">
+              EdTech LMS
+            </span>
+            <span class="absolute top-3.5 right-3.5 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-medium backdrop-blur-md bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Live
+            </span>
+          </div>
+          <div class="p-6 sm:p-7 pb-2">
+            <p class="text-xs uppercase tracking-wider text-[#b820e6] dark:text-lime-300 font-semibold mb-1">
+              E-learning management system
+            </p>
+            <h2 class="text-2xl font-bold font-Ovo text-gray-900 dark:text-white group-hover:text-[#b820e6] dark:group-hover:text-lime-300 transition-colors duration-300 mb-3">
+              Advance Computer Centre — LMS
+            </h2>
+            <p class="text-sm text-gray-600 dark:text-white/80 leading-relaxed font-Outfit mb-5">
+              A production e-learning platform and Learning Management System (LMS) with course catalog management, student enrollment, lesson tracking, and academic administrative dashboards.
+            </p>
+          </div>
+        </div>
+        <div class="px-6 sm:px-7 pb-6">
+          <div class="flex flex-wrap gap-1.5 mb-5">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">E-learning</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Web app</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">Node.js</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300 font-medium">MongoDB</span>
+          </div>
+          <div class="flex flex-wrap gap-3 pt-3 border-t border-gray-200 dark:border-white/10 items-center justify-between">
+            <div class="flex flex-wrap gap-2.5">
+              <a href="https://www.advancecomputercentre.in" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 dark:border-white text-xs sm:text-sm font-medium hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition duration-300">
+                Live site
+                <img src="./images/send-icon.png" class="w-3.5 dark:invert" alt="" aria-hidden="true">
+              </a>
+              <a href="https://github.com/pardeepsingh77/LMS-Site-Manider-Sir" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 dark:border-white text-xs sm:text-sm font-medium hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition duration-300">
+                Code
+                <i class="fa-brands fa-github text-sm" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- -------------------------------footer--------------------------- -->
-    <div class="mt-20">
-        <div class="text-center">
-            <img src="./images/simple logo 2.png" alt="" class="w-36 mx-auto mb-2 dark:hidden">
-            <img src="./images/simple logo for dark mode 2.png" alt="" class="w-36 mx-auto mb-2 hidden dark:block">
-            <div class="w-max flex items-center gap-2 mx-auto">
-                <img src="./images/mail_icon.png" alt="" class="w-6 dark:hidden">
-                <img src="./images/mail_icon_dark.png" alt="" class="w-6 hidden dark:block">
-                ps5380028@gmail.com
-            </div>
-        </div>
-        <div class="text-center sm:flex items-center justify-between mx-[10%]
-        my-12  pt-6 border-t border-gray-400">
-            <p>@ 2024 Pardeep Singh. All rights reserved</p>
-            <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
-                <li>
-                    <a target="_blank" href="https://www.instagram.com/observing.myself_/">
-                        <img src="./images/instagramicon.jpeg" class="w-10 rounded-full" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://github.com/pardeepsingh77">
-                        <img src="./images/githubico.png" class="w-10 rounded-full" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.linkedin.com/in/pardeep-singh-a8b299239/">
-                        <img src="./images/linkedin icon.png" class="w-10 rounded-full" alt="">
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <!-- Call to Action -->
+    <div class="text-center py-12 border-t border-gray-400 mt-16">
+      <h3 class="text-2xl md:text-3xl font-Ovo mb-4 text-gray-700 dark:text-white">Have a project in mind?</h3>
+      <p class="text-gray-600 dark:text-white/80 mb-8 font-Ovo max-w-2xl mx-auto">
+        Have a project in mind, or a role you think I'd be a good fit for? Send me a message and I'll get back to you.
+      </p>
+      <a href="index.html#contact"
+        class="inline-flex items-center gap-2 px-10 py-4 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white font-Ovo hover:opacity-90 transition duration-300">
+        Get in touch
+        <img src="./images/right-arrow-white.png" class="w-4" alt="" aria-hidden="true">
+      </a>
     </div>
+  </div>
+
+  <!-- -------------------------------footer--------------------------- -->
+  <footer class="mt-20">
+    <div class="text-center">
+      <img src="./images/simple logo 2.png" alt="Pardeep Singh Logo" class="w-36 mx-auto mb-2 dark:hidden">
+      <img src="./images/simple logo for dark mode 2.png" alt="Pardeep Singh Logo"
+        class="w-36 mx-auto mb-2 hidden dark:block">
+      <div class="w-max flex items-center gap-2 mx-auto text-gray-700 dark:text-white/90">
+        <img src="./images/mail_icon.png" alt="" class="w-6 dark:hidden" aria-hidden="true">
+        <img src="./images/mail_icon_dark.png" alt="" class="w-6 hidden dark:block" aria-hidden="true">
+        <a href="mailto:pardeep.codes04@gmail.com" class="hover:underline">pardeep.codes04@gmail.com</a>
+      </div>
+    </div>
+    <div class="text-center sm:flex items-center justify-between mx-[10%] my-12 pt-6 border-t border-gray-400">
+      <p class="text-gray-700 dark:text-white/80">© <span class="current-year">2026</span> Pardeep Singh. All rights reserved.</p>
+      <ul class="flex items-center gap-6 justify-center mt-4 sm:mt-0">
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/pardeepsingh77"
+            aria-label="GitHub Profile"
+            class="w-10 h-10 rounded-full border border-gray-400 dark:border-white/40 flex items-center justify-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition">
+            <i class="fa-brands fa-github text-xl" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/pardeep-codes"
+            aria-label="LinkedIn Profile"
+            class="w-10 h-10 rounded-full border border-gray-400 dark:border-white/40 flex items-center justify-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition">
+            <i class="fa-brands fa-linkedin-in text-xl" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 <script src="index.js"></script>
-</html>
 
+</html>
